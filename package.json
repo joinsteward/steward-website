@@ -6,13 +6,47 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "format": "yarn prettier --write .",
+    "analyze": "cross-env ANALYZE=true next build",
+    "lint": "next lint --fix --dir pages --dir components --dir containers --dir assets --dir styles --dir lib",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "eslint": "8.35.0",
-    "eslint-config-next": "13.2.3",
+    "@heroicons/react": "^2.0.14",
+    "@next/bundle-analyzer": "^13.1.1",
+    "@next/font": "13.1.1",
+    "classnames": "^2.3.2",
+    "framer-motion": "^6.2.8",
+    "googleapis": "^110.0.0",
     "next": "13.2.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "swiper": "8.0.7",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.30.0",
+    "@svgr/webpack": "^6.5.1",
+    "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.31.0",
+    "eslint-config-next": "^13.1.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "next-remote-watch": "^2.0.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.2",
+    "prettier-plugin-tailwindcss": "^0.1.4",
+    "tailwindcss": "^3.2.4"
+  },
+  "lint-staged": {
+    "*.+(js|jsx|ts|tsx)": [
+      "eslint --fix"
+    ],
+    "*.+(js|jsx|ts|tsx|json|css)": [
+      "prettier --write"
+    ]
   }
 }
