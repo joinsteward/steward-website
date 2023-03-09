@@ -34,36 +34,43 @@ module.exports = {
         37: '9.375rem',
       },
       colors: {
-        accent: {
-          orange: '#D28B28',
-          green: '#BFFF0B',
-          brown: '#AF7421',
-          light_yellow: '#FBF5EC',
-          gray: '#242628',
-          'moss/400': '#86CB3C',
-        },
-        textBaseColor: '#242628',
-        grey: {
-          light: '#E5E5E5',
-          dark: '#606060',
-          divider: '#D9DDD5',
-          bg: '#F2F4F1',
-          warm: '#FAFAF9',
-          deep: '#586068',
-          'warm-800': '#292524',
-          'warm-900': '#1C1917',
-          'warm-400': '#A9A29D',
-          semi: '#E5E8E3',
-          accent: '#44403C',
-          stroke: '#D7D3D0',
-        },
-        blue: {
-          light: '#242628',
-        },
-        support: '#586068',
-        secondary: {
-          900: '#3A270B',
-        },
+        // gray
+        'gray-25': '#FCFCFD',
+        'gray-30': '#667085',
+
+        // success
+        'success-25': '#d1fadf',
+        'success-50': '#ECFDF3',
+        'success-100': '#D1FADF',
+        'success-500': '#12B76A',
+        'success-600': '#039855',
+        'success-700': '#027A48',
+        'success-800': '#05603a',
+
+        // primary
+        'primary-700': '#00060E',
+        'primary-50': '#E7E7E7',
+        'primary-600': '#000712',
+
+        // error
+        'error-50': '#fef3f2',
+        'error-25': '#FFFBFA',
+        'error-100': '##FEE4E2',
+        'error-300': '#FDA29B',
+        'error-600': '#F04438',
+        'error-700': '#B42318',
+
+        // blue-gray
+        'blue-gray-50': '#F8F9FC',
+        'blue-gray-700': '#363F72',
+        'blue-gray-500': '#4E5BA6',
+        'blue-gray-600': '#3E4784',
+
+        // warning
+        'warning-50': '#FFFCF5',
+        'warning-300': '#FEC84B',
+        'warning-500': '#F79009',
+        'warning-700': '#B54708',
       },
       fontSize: {
         '1sm': '0.9375rem',

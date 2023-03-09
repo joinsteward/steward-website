@@ -16,7 +16,7 @@ const Navbar = () => {
               className="absolute z-50 block -translate-y-4 -translate-x-8 md:hidden"
               //   onClick={handleClick}
             ></button>
-            <nav className="text-gray-30 flex flex-row items-center gap-8 space-x-1 text-sm font-medium lg:text-base">
+            <nav className="flex flex-row items-center gap-8 space-x-1 text-sm font-medium text-gray-30 lg:text-base">
               <a className="cursor-pointer hover:text-gray-900">Loans</a>
               <a className="flex cursor-pointer items-center hover:text-gray-900">About Us</a>
             </nav>
@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="z-50 md:flex">
           <div className="flex flex-row items-center space-x-4 font-medium md:ml-16">
             <Link
-              className="text-gray-30 flex h-11 items-center justify-center px-3 text-xs font-medium md:px-6 md:text-base"
+              className="flex h-11 items-center justify-center px-3 text-xs font-medium text-gray-30 md:px-6 md:text-base"
               href="/login"
             >
               Sign In
