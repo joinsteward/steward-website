@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         // footer: 'url(../assets/image/footer-lines.svg)',
+        hero_bg: 'url(../assets/image/bg-layer.svg)',
       },
       fontFamily: {
         sans: ['Aeonik', ...defaultTheme.fontFamily.sans],

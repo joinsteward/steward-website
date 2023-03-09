@@ -1,13 +1,13 @@
-import { Hero_img } from 'assets/image'
+import { backedby, Hero_img } from 'assets/image'
 import LayoutWrapper from 'components/layout-wrapper'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <LayoutWrapper>
-      <section className="body-font text-gray-600">
-        <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
-          <div className="mb-16 flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24">
+      <section className="bg-hero_bg">
+        <div className="container mx-auto flex flex-col px-5 py-16 md:flex-row">
+          <div className="my-16 flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24">
             <h1 className="mb-4 text-3xl font-medium text-gray-900 sm:text-6xl">
               Financial Services for Ambitious Private Schools across Africa
             </h1>
@@ -23,10 +23,18 @@ export default function Home() {
                 Call +256 706 192709
               </button>
             </div>
+            <div className="mt-8 flex items-center gap-3 md:mt-16 xl:mt-28">
+              <h6 className="whitespace-nowrap text-sm">Backed by:</h6>
+              <Image
+                className="w-full max-w-md object-contain object-center"
+                alt="hero"
+                src={backedby}
+              />
+            </div>
           </div>
           <div className="w-full md:w-1/2">
             <Image
-              className="max-h-full w-full rounded object-contain object-center"
+              className="max-h-full w-full object-contain object-center"
               alt="hero"
               src={Hero_img}
             />
