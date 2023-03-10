@@ -101,3 +101,56 @@
 body {
   font-family: 'Aeonik', sans-serif !important;
 }
+
+.gradient__bg {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    254.23deg,
+    #f7f5ff 2.17%,
+    #ffffff 29.85%,
+    #fff9f4 45.52%,
+    #f9f9f9 69.19%,
+    #ffffff 100.3%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    254.23deg,
+    #f7f5ff 2.17%,
+    #ffffff 29.85%,
+    #fff9f4 45.52%,
+    #f9f9f9 69.19%,
+    #ffffff 100.3%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    254.23deg,
+    #f7f5ff 2.17%,
+    #ffffff 29.85%,
+    #fff9f4 45.52%,
+    #f9f9f9 69.19%,
+    #ffffff 100.3%
+  );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    254.23deg,
+    #f7f5ff 2.17%,
+    #ffffff 29.85%,
+    #fff9f4 45.52%,
+    #f9f9f9 69.19%,
+    #ffffff 100.3%
+  );
+
+  /* global 92%+ browsers support */
+  background: linear-gradient(
+    254.23deg,
+    #f7f5ff 2.17%,
+    #ffffff 29.85%,
+    #fff9f4 45.52%,
+    #f9f9f9 69.19%,
+    #ffffff 100.3%
+  );
+  background-blend-mode: overlay;
+}

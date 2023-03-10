@@ -4,7 +4,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section className="bg-hero_bg">
+    <section className="gradient__bg">
       <div className="container mx-auto flex flex-col px-5 py-16 md:flex-row">
         <div className="my-16 flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24">
           <h1 className="mb-4 text-3xl font-medium text-gray-900 sm:text-6xl">

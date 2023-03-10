@@ -19,6 +19,7 @@ module.exports = {
       backgroundImage: {
         // footer: 'url(../assets/image/footer-lines.svg)',
         hero_bg: 'url(../assets/image/bg-layer.svg)',
+        cta_banner: 'url(../assets/image/cta_banner.svg)',
       },
       fontFamily: {
         sans: ['Aeonik', ...defaultTheme.fontFamily.sans],
@@ -61,10 +62,14 @@ module.exports = {
         'error-700': '#B42318',
 
         // blue-gray
+        'blue-gray-25': '#FCFCFD',
         'blue-gray-50': '#F8F9FC',
         'blue-gray-700': '#363F72',
         'blue-gray-500': '#4E5BA6',
         'blue-gray-600': '#3E4784',
+
+        'blue-light-700': '#026AA2',
+        'blue-light-25': '#F5FBFF',
 
         // warning
         'warning-50': '#FFFCF5',

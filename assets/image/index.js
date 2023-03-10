@@ -1,3 +1,6 @@
 export { default as Hero_img } from './here_img.png'
 export { default as backedby } from './backedby.png'
 export { default as section_two } from './section_two.png'
+export { default as schoolfees } from './schoolfees.png'
+export { default as loangrow } from './loangrow.png'
+export { default as avatar } from './avatar.png'
