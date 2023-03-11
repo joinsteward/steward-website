@@ -1,4 +1,6 @@
 import { backedby, Hero_img, Hero_img_mobile } from 'assets/image'
+import classNames from 'classnames'
+import { ArrowRight } from 'iconsax-react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -16,7 +18,7 @@ const Hero = () => {
           </p>
           <div className="flex gap-3">
             <button className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-sm">
-              Contact Sales
+              Contact Us <ArrowRight className={classNames('h-5 w-5 text-white')} />
             </button>
             <button className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm">
               Call +256 706 192709

@@ -10,7 +10,7 @@ const BusinessTools = () => {
         Business tools and offerings for your school to grow.
       </h1>
       <div className="mt-10 grid w-full gap-10 md:grid-cols-2">
-        <div className="flex flex-col overflow-hidden rounded-xl bg-success-25">
+        <div className="flex h-fit flex-col overflow-hidden rounded-xl bg-success-25">
           <div className="p-10">
             <h5 className="mb-6 text-sm md:text-[18px]">CAPITAL</h5>
             <h3 className="mb-6 text-xl font-medium text-success-700 md:text-3xl">
@@ -26,7 +26,7 @@ const BusinessTools = () => {
           </div>
           <Image src={loangrow} alt={loangrow} className="mt-auto w-full" />
         </div>
-        <div className="flex h-full flex-col overflow-hidden rounded-xl bg-blue-light-25">
+        <div className="flex h-fit flex-col overflow-hidden rounded-xl bg-blue-light-25">
           <div className="p-10">
             <h5 className="mb-6 text-sm md:text-[18px]">PAYMENTS</h5>
             <h3 className="mb-6 text-xl font-medium text-blue-light-700 md:text-3xl">
