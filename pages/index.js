@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Ambitions />
       <BusinessTools />
-      <WhySteward />
+      {/* <WhySteward /> */}
       <CtaBanner />
     </LayoutWrapper>
   )

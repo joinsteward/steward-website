@@ -58,8 +58,10 @@ const Navbar = () => {
           </button>
           <div className="hidden w-full md:ml-auto md:mr-auto md:flex">
             <nav className="flex flex-row items-center gap-8 space-x-1 whitespace-nowrap text-sm font-medium text-gray-30 lg:text-base">
-              <a className="cursor-pointer hover:text-gray-900">Loans</a>
-              <a className="flex cursor-pointer items-center hover:text-gray-900">About Us</a>
+              <Link className="cursor-pointer hover:text-gray-900" href="#loans">
+                Loans
+              </Link>
+              {/* <a className="flex cursor-pointer items-center hover:text-gray-900">About Us</a> */}
             </nav>
           </div>
         </div>
@@ -68,13 +70,17 @@ const Navbar = () => {
           <div className="flex flex-row items-center space-x-4 font-medium md:ml-16">
             <Link
               className="flex h-11 items-center justify-center px-3 text-xs font-medium text-gray-30 md:px-6 md:text-base"
-              href="/login"
+              href="/"
             >
               Sign In
             </Link>
-            <button className="flex h-11 items-center justify-center gap-2 rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-base">
-              Contact Sales
-            </button>
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
+              target="_blank"
+              className="flex h-11 items-center justify-center gap-2 rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-base"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
 
@@ -89,15 +95,26 @@ const Navbar = () => {
           <div className="container mx-auto mt-25 flex  h-fit flex-col overflow-y-scroll px-6 pb-10 ">
             <div className="w-full space-y-16">
               <nav className="flex flex-col space-y-5 font-normal text-black ">
-                <a className="cursor-pointer hover:text-gray-900">Payments</a>
-                <a className="cursor-pointer hover:text-gray-900">Loans</a>
-                <a className="flex cursor-pointer items-center hover:text-gray-900">About Us</a>
-                <Link
-                  className="!mt-10 flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-base"
-                  href="/login"
-                >
-                  Login <ArrowRight className={classNames('h-4 w-4 text-white')} />
-                </Link>
+                {/* <a className="cursor-pointer hover:text-gray-900">Payments</a> */}
+                <a className="cursor-pointer hover:text-gray-900" href="#loans">
+                  Loans
+                </a>
+                {/* <a className="flex cursor-pointer items-center hover:text-gray-900">About Us</a> */}
+                <div className="!mt-10 space-y-4">
+                  <Link
+                    className="flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-white px-3 text-center text-xs font-medium text-black md:px-6 md:text-base"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
+                    target="_blank"
+                  >
+                    Contact Us
+                  </Link>
+                  <Link
+                    className="flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-base"
+                    href="/"
+                  >
+                    Login <ArrowRight className={classNames('h-4 w-4 text-white')} />
+                  </Link>
+                </div>
               </nav>
             </div>
           </div>

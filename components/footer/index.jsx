@@ -1,4 +1,5 @@
 import { Facebook, Linkedin, Twitter, WhiteLogo } from 'assets/icons'
+import Link from 'next/link'
 import React from 'react'
 
 const product = [
@@ -29,31 +30,31 @@ const product = [
 ]
 
 const resources = [
-  {
-    link: '/',
-    title: 'Support',
-  },
+  // {
+  //   link: '/',
+  //   title: 'Support',
+  // },
   {
     link: '/',
     title: 'Join our WhatsApp community',
   },
-  {
-    link: '/',
-    title: 'Join our Telegram community',
-  },
+  // {
+  //   link: '/',
+  //   title: 'Join our Telegram community',
+  // },
 ]
 
 const company = [
+  // {
+  //   link: '/',
+  //   title: 'About Us',
+  // },
+  // {
+  //   link: '/',
+  //   title: 'Blog',
+  // },
   {
-    link: '/',
-    title: 'About Us',
-  },
-  {
-    link: '/',
-    title: 'Blog',
-  },
-  {
-    link: '/',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform',
     title: 'Contact Us',
   },
 ]
@@ -93,9 +94,9 @@ const Footer = () => {
             <nav className="mb-10 list-none space-y-2 text-sm font-normal">
               {product.map(({ title, link }, index) => (
                 <li key={index}>
-                  <a className="text-gray-300 hover:text-gray-400" href={link}>
+                  <Link className="text-gray-300 hover:text-gray-400" href={link}>
                     {title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </nav>
@@ -105,9 +106,9 @@ const Footer = () => {
             <nav className="mb-10 list-none space-y-2 text-sm font-normal">
               {resources.map(({ title, link }, index) => (
                 <li key={index}>
-                  <a className="text-gray-300 hover:text-gray-400" href={link}>
+                  <Link className="text-gray-300 hover:text-gray-400" href={link}>
                     {title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </nav>
@@ -117,9 +118,9 @@ const Footer = () => {
             <nav className="mb-10 list-none space-y-2 text-sm font-normal">
               {company.map(({ title, link }, index) => (
                 <li key={index}>
-                  <a className="text-gray-300 hover:text-gray-400" href={link}>
+                  <Link className="text-gray-300 hover:text-gray-400" href={link}>
                     {title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </nav>
@@ -130,9 +131,9 @@ const Footer = () => {
             <nav className="flex list-none items-center gap-4 text-sm">
               {privacy.map(({ title, link }, index) => (
                 <li key={index}>
-                  <a className="text-gray-300 hover:text-gray-400" href={link}>
+                  <Link className="text-gray-300 hover:text-gray-400" href={link}>
                     {title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </nav>

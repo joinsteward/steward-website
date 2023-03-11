@@ -2,6 +2,7 @@ import { backedby, Hero_img, Hero_img_mobile } from 'assets/image'
 import classNames from 'classnames'
 import { ArrowRight } from 'iconsax-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Hero = () => {
@@ -17,12 +18,19 @@ const Hero = () => {
             <br className="hidden xl:inline-block" /> expenses and acquisition of assets.
           </p>
           <div className="flex gap-3">
-            <button className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-sm">
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
+              target="_blank"
+              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-sm"
+            >
               Contact Us <ArrowRight className={classNames('h-5 w-5 text-white')} />
-            </button>
-            <button className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm">
+            </Link>
+            <Link
+              href="tel:+256706192709"
+              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm"
+            >
               Call +256 706 192709
-            </button>
+            </Link>
           </div>
           <div className="my-8 flex items-center gap-3 md:mt-16 xl:mt-28">
             <h6 className="whitespace-nowrap text-sm">Backed by:</h6>
