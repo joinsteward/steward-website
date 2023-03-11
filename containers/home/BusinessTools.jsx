@@ -5,11 +5,11 @@ import React from 'react'
 
 const BusinessTools = () => {
   return (
-    <section className="container mx-auto flex flex-col px-5 py-16 sm:px-24 lg:py-37 xl:px-0">
-      <h1 className="max-w-3xl  text-xl font-semibold leading-[60px] md:text-3xl xl:text-5xl">
+    <section className="container mx-auto flex flex-col px-6  py-16 sm:px-0 lg:px-16 lg:py-37  xl:px-5">
+      <h1 className="max-w-3xl text-xl  font-semibold md:max-w-xl md:text-3xl md:leading-[60px] xl:text-5xl">
         Business tools and offerings for your school to grow.
       </h1>
-      <div className="mt-10 grid w-full grid-cols-2 gap-10">
+      <div className="mt-10 grid w-full gap-10 md:grid-cols-2">
         <div className="flex flex-col overflow-hidden rounded-xl bg-success-25">
           <div className="p-10">
             <h5 className="mb-6 text-sm md:text-[18px]">CAPITAL</h5>

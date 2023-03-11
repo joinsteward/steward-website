@@ -1,18 +1,18 @@
-import { backedby, Hero_img } from 'assets/image'
+import { backedby, Hero_img, Hero_img_mobile } from 'assets/image'
 import Image from 'next/image'
 import React from 'react'
 
 const Hero = () => {
   return (
     <section className="gradient__bg">
-      <div className="container mx-auto flex flex-col px-5 py-16 md:flex-row">
-        <div className="my-16 flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24">
-          <h1 className="mb-4 text-3xl font-medium text-gray-900 sm:text-6xl">
+      <div className="container mx-auto flex flex-col px-6 py-16  sm:px-0  md:flex-row lg:px-16 xl:px-5">
+        <div className="flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24 xl:my-16">
+          <h1 className="mb-4 text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
             Financial Services for Ambitious Private Schools across Africa
           </h1>
           <p className="mb-8 leading-relaxed">
             Steward offers loans to private schools to fund operational
-            <br className="hidden lg:inline-block" /> expenses and acquisition of assets.
+            <br className="hidden xl:inline-block" /> expenses and acquisition of assets.
           </p>
           <div className="flex gap-3">
             <button className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-sm">
@@ -22,10 +22,10 @@ const Hero = () => {
               Call +256 706 192709
             </button>
           </div>
-          <div className="mt-8 flex items-center gap-3 md:mt-16 xl:mt-28">
+          <div className="my-8 flex items-center gap-3 md:mt-16 xl:mt-28">
             <h6 className="whitespace-nowrap text-sm">Backed by:</h6>
             <Image
-              className="w-full max-w-md object-contain object-center"
+              className="max-w-[18rem] object-scale-down object-center xl:max-w-lg"
               alt="hero"
               src={backedby}
             />
@@ -33,9 +33,14 @@ const Hero = () => {
         </div>
         <div className="w-full md:w-1/2">
           <Image
-            className="max-h-full w-full object-contain object-center"
+            className="hidden max-h-full w-full object-contain object-center md:block"
             alt="hero"
             src={Hero_img}
+          />
+          <Image
+            className="block max-h-full w-full  object-contain object-center  md:hidden"
+            alt="hero"
+            src={Hero_img_mobile}
           />
         </div>
       </div>
