@@ -82,11 +82,13 @@ const Navbar = () => {
           initial={false}
           animate={click ? 'open' : 'closed'}
           variants={variants}
-          className={classNames(`absolute inset-0 block h-fit w-full bg-white md:hidden`)}
+          className={classNames(
+            `absolute inset-0 block h-fit w-full rounded-b-xl bg-white shadow-sm md:hidden`
+          )}
         >
-          <div className="mt-25 flex h-fit min-w-full flex-col overflow-hidden overflow-y-scroll rounded-b-xl pb-10 shadow-sm ">
+          <div className="container mx-auto mt-25 flex  h-fit flex-col overflow-y-scroll px-6 pb-10 ">
             <div className="w-full space-y-16">
-              <nav className="flex flex-col space-y-5 px-6 font-normal text-black ">
+              <nav className="flex flex-col space-y-5 font-normal text-black ">
                 <a className="cursor-pointer hover:text-gray-900">Payments</a>
                 <a className="cursor-pointer hover:text-gray-900">Loans</a>
                 <a className="flex cursor-pointer items-center hover:text-gray-900">About Us</a>

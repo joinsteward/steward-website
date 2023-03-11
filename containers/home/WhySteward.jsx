@@ -11,7 +11,7 @@ const WhySteward = () => {
         </h1>
         <p className="mt-8 text-2xl">Here's what some of them are saying.</p>
         <div className="mt-10 grid w-full max-w-7xl gap-10 md:grid-cols-2">
-          <div className="flex h-fit flex-col overflow-hidden rounded-xl bg-gray-100 px-10 py-16">
+          <div className="flex min-h-fit flex-col overflow-hidden rounded-xl bg-gray-100 px-10 py-16">
             <h5 className="mb-8 text-lg md:text-2xl md:leading-[44px] xl:text-4xl">
               "Steward helps individuals and organisations to manage the entire scholarship process
               from calls for applications to scholarship admin."
@@ -22,7 +22,7 @@ const WhySteward = () => {
               subtext="Director at Springfield Junior School, Kampala"
             />
           </div>
-          <div className="flex h-fit flex-col overflow-hidden rounded-xl bg-gray-100 px-10 py-16">
+          <div className="flex min-h-fit flex-col overflow-hidden rounded-xl bg-gray-100 px-10 py-16">
             <h5 className="mb-8 text-lg md:text-2xl md:leading-[44px] xl:text-4xl">
               "Steward helps individuals and organisations to manage the entire scholarship process
               from calls for applications to scholarship admin."
