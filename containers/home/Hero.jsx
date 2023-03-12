@@ -32,10 +32,10 @@ const Hero = () => {
               Call +256 706 192709
             </Link>
           </div>
-          <div className="my-8 flex items-center gap-3 md:mt-16 xl:mt-28">
-            <h6 className="whitespace-nowrap text-sm">Backed by:</h6>
+          <div className="my-8 box-border grid w-fit  grid-cols-6 items-center gap-10 md:mt-16 md:grid-cols-8  md:gap-20  xl:mt-28 xl:gap-0">
+            <h6 className="whitespace-nowrap text-sm">Backed by</h6>
             <Image
-              className="max-w-[18rem] object-scale-down object-center xl:max-w-lg"
+              className="col-span-5 w-full max-w-[18rem] object-scale-down object-center md:col-span-7 xl:max-w-lg"
               alt="hero"
               src={backedby}
             />
