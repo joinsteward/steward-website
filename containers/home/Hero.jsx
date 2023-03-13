@@ -17,7 +17,7 @@ const Hero = () => {
             Steward offers loans to private schools to fund operational
             <br className="hidden xl:inline-block" /> expenses and acquisition of assets.
           </p>
-          <div className="flex gap-3">
+          <div className="grid grid-cols-2 gap-3">
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
               target="_blank"
