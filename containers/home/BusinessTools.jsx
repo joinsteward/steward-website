@@ -41,8 +41,7 @@ const BusinessTools = () => {
               School fees collection
             </h3>
             <p className="mb-4 text-sm leading-[30px] text-gray-600 md:text-xl ">
-              Accept payment and fees collection Receive money and school fees collection from
-              students and parents
+              Accept your school payments and fees collections from students and parents
             </p>
             <button className="flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm">
               Coming soon

@@ -12,8 +12,8 @@ const Ambitions = () => {
             We create growth opportunities for small but ambitious schools
           </h4>
           <p className="text-xs lg:text-base xl:text-lg">
-            Steward supports schools who are enthusiastic about growing and giving quality education
-            to their students{' '}
+            Steward supports schools that are enthusiastic about growing and giving quality
+            education to their students{' '}
           </p>
         </div>
         <Image
@@ -33,7 +33,7 @@ const Ambitions = () => {
           private schools of all sizes depend on Steward to grow.
         </h1>
         <p className="text-xs italic md:text-xl">
-          We are trusted by over several schools across Uganda.{' '}
+          We are trusted by several schools across Uganda.{' '}
         </p>
         <div className="flex w-fit items-center gap-3 rounded-full border p-2 text-[8px] italic md:p-3 md:text-base">
           Available in Uganda, with more coming soon
