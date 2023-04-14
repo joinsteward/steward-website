@@ -10,15 +10,15 @@ const BusinessTools = () => {
       id="loans"
       className="container mx-auto flex flex-col px-6  py-16 sm:px-0 lg:px-16 lg:py-37  xl:px-5"
     >
-      <h1 className="max-w-3xl text-xl  font-semibold md:max-w-xl md:text-3xl md:leading-[60px] xl:text-5xl">
+      <h1 className="max-w-3xl font-duplicate-san  text-xl font-semibold md:max-w-xl md:text-3xl md:leading-[60px] xl:text-5xl">
         Business tools and offerings for your school to grow.
       </h1>
       <div className="mt-10 grid w-full gap-10 md:grid-cols-2">
         <div className="flex min-h-fit flex-col overflow-hidden rounded-xl bg-success-25">
           <div className="p-10">
             <h5 className="mb-6 text-sm md:text-[18px]">CAPITAL</h5>
-            <h3 className="mb-6 text-xl font-medium text-success-700 md:text-3xl">
-              Loans to grow your school{' '}
+            <h3 className="mb-6 font-duplicate-san text-xl font-medium text-success-700 md:text-3xl">
+              Loans to grow your school
             </h3>
             <p className="mb-4 text-sm leading-[30px] text-gray-600 md:text-xl ">
               We give you access to quick and flexible loans within 24-48 hours with low interest
@@ -37,7 +37,7 @@ const BusinessTools = () => {
         <div className="flex min-h-fit flex-col overflow-hidden rounded-xl bg-blue-light-25">
           <div className="p-10">
             <h5 className="mb-6 text-sm md:text-[18px]">PAYMENTS (Coming soon)</h5>
-            <h3 className="mb-6 text-xl font-medium text-blue-light-700 md:text-3xl">
+            <h3 className="mb-6 font-duplicate-san text-xl font-medium text-blue-light-700 md:text-3xl">
               School fees collection
             </h3>
             <p className="mb-4 text-sm leading-[30px] text-gray-600 md:text-xl ">

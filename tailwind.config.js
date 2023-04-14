@@ -22,7 +22,8 @@ module.exports = {
         cta_banner: 'url(../assets/image/cta_banner.svg)',
       },
       fontFamily: {
-        sans: ['Archivo', ...defaultTheme.fontFamily.sans],
+        sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
+        'duplicate-san': 'Duplicate Sans',
       },
       spacing: {
         1.25: '0.3125rem',

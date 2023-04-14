@@ -8,7 +8,7 @@ const Ambitions = () => {
     <section className="flex w-full flex-col justify-center bg-gray-25 py-16 md:py-20 xl:py-28">
       <div className="relative w-full px-6 sm:px-0 md:px-20">
         <div className="inset-0 mx-auto mb-10 max-w-[16rem] space-y-3 text-center sm:max-w-[16rem] md:absolute md:mt-10 md:max-w-xs xl:mt-24 xl:max-w-xl">
-          <h4 className="text-base font-medium md:text-2xl xl:text-4xl">
+          <h4 className="font-duplicate-san text-base font-medium md:text-2xl xl:text-4xl">
             We create growth opportunities for small but ambitious schools
           </h4>
           <p className="text-xs lg:text-base xl:text-lg">
@@ -28,7 +28,7 @@ const Ambitions = () => {
         />
       </div>
       <div className="container mx-auto mt-10 space-y-4 px-10 md:mt-20 md:max-w-5xl md:space-y-10 md:px-16 xl:px-0 ">
-        <h1 className="text-xl font-light md:text-3xl lg:!text-4xl  xl:!text-6xl">
+        <h1 className="font-duplicate-san text-xl font-light md:text-3xl  lg:!text-4xl xl:!text-6xl">
           The enormity of the ambition, not the size of the school, is what matters. Ambitious
           private schools of all sizes depend on Steward to grow.
         </h1>
