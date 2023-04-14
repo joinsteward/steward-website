@@ -13,9 +13,10 @@ const Hero = () => {
           <h1 className="mb-4 font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
             Financial Services for Ambitious Private Schools across Africa
           </h1>
-          <p className="mb-8 leading-relaxed">
-            Steward offers loans to private schools to fund operational
-            <br className="hidden xl:inline-block" /> expenses and acquisition of assets.
+          <p className="mb-8 leading-relaxed md:text-2xl ">
+            Obtain loans, collect school fees payments and manage
+            <br className="hidden xl:inline-block" /> operations with our school business banking
+            system.
           </p>
           <div className="grid grid-cols-2 gap-3">
             <Link
