@@ -14,9 +14,8 @@ const Hero = () => {
             Financial Services for Ambitious Private Schools across Africa
           </h1>
           <p className="mb-8 leading-relaxed md:text-2xl ">
-            Obtain loans, collect school fees payments and manage
-            <br className="hidden xl:inline-block" /> operations with our school business banking
-            system.
+            Obtain loans, collect school fees payments and manage operations with our school
+            business banking system.
           </p>
           <div className="grid grid-cols-2 gap-3">
             <Link
