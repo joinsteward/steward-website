@@ -5,16 +5,16 @@ const CtaBanner = () => {
   return (
     <section className="flex justify-center bg-gray-25 px-6 py-16 sm:px-0 md:py-32 lg:px-16 xl:px-5">
       <div className="container flex h-full w-full flex-col items-center justify-center rounded-2xl bg-gray-100 bg-cta_banner bg-cover bg-top bg-no-repeat p-8 py-16 md:flex-row md:p-28 md:py-28">
-        <div className="flex max-w-3xl flex-col items-center justify-center space-y-6 text-center">
+        <div className="flex max-w-3xl flex-col items-center justify-center space-y-6 text-center text-white">
           <h1 className="custom-font font-duplicate-san text-3xl font-bold md:text-5xl">
-            Ready to get started?
+            We're fuelling the aspirations of thousands of schools. Let's fuel yours as well.
           </h1>
           <p className="text-base md:text-2xl">
             Create an account and instantly help your school grow
           </p>
           <Link
             href="tel:+256706192709"
-            className="flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm"
+            className="flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-3 text-center text-xs font-medium text-white md:px-6 md:text-sm"
           >
             Call +256 706 192709
           </Link>

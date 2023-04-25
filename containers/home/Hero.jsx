@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col px-6 py-16  sm:px-0  md:flex-row lg:px-16 xl:px-5">
         <div className="flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24 xl:my-16">
           <h1 className="mb-4 font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
-            Financial Services for Ambitious Private Schools across Africa
+            Financial Services for Private Schools across Africa
           </h1>
           <p className="mb-8 leading-relaxed md:text-2xl ">
             Get loans, collect fees and manage finances with our school banking platform.

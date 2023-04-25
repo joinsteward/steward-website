@@ -19,7 +19,7 @@ module.exports = {
       backgroundImage: {
         // footer: 'url(../assets/image/footer-lines.svg)',
         hero_bg: 'url(../assets/image/bg-layer.svg)',
-        cta_banner: 'url(../assets/image/cta_banner.svg)',
+        cta_banner: 'url(../assets/image/cta-bg.jpg)',
       },
       fontFamily: {
         sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
