@@ -7,10 +7,7 @@ const product = [
   //   link: '/',
   //   title: 'Payout',
   // },
-  // {
-  //   link: '/',
-  //   title: 'Accept payments ',
-  // },
+
   // {
   //   link: '/',
   //   title: 'Payout',
@@ -22,6 +19,10 @@ const product = [
   {
     link: '/',
     title: 'School loans ',
+  },
+  {
+    link: '/',
+    title: 'Accept payments ',
   },
   // {
   //   link: '/',
