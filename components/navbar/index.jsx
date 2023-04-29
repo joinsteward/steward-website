@@ -70,7 +70,7 @@ const Navbar = () => {
           <div className="flex flex-row items-center space-x-4 font-medium md:ml-16">
             <Link
               className="flex h-11 items-center justify-center px-3 text-xs font-medium text-gray-30 md:px-6 md:text-base"
-              href="/"
+              href="https://app.joinsteward.com"
             >
               Sign In
             </Link>
