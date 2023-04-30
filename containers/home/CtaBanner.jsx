@@ -14,7 +14,7 @@ const CtaBanner = () => {
           </p>
           <Link
             href="tel:+256706192709"
-            className="flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-3 text-center text-xs font-medium text-white md:px-6 md:text-sm"
+            className="flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-3 text-center text-xs font-medium text-white md:h-15 md:px-6 md:text-sm"
           >
             Call +256 706 192709
           </Link>

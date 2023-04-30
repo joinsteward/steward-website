@@ -20,13 +20,13 @@ const Hero = () => {
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
               target="_blank"
-              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-sm"
+              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:h-15 md:px-6 md:text-sm"
             >
               Contact Us <ArrowRight className={classNames('h-5 w-5 text-white')} />
             </Link>
             <Link
               href="tel:+256706192709"
-              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm"
+              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:h-15 md:px-6 md:text-sm"
             >
               Call +256 706 192709
             </Link>

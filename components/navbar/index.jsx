@@ -69,7 +69,7 @@ const Navbar = () => {
         <div className="z-50 hidden md:flex">
           <div className="flex flex-row items-center space-x-4 font-medium md:ml-16">
             <Link
-              className="flex h-11 items-center justify-center px-3 text-xs font-medium text-gray-30 md:px-6 md:text-base"
+              className="flex  h-11 items-center justify-center px-3 text-xs font-medium text-gray-30 md:px-6 md:text-base"
               href="https://app.joinsteward.com"
             >
               Sign In
@@ -79,7 +79,7 @@ const Navbar = () => {
               target="_blank"
               className="flex h-11 items-center justify-center gap-2 rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-base"
             >
-              Contact Us
+              Book a demo
             </Link>
           </div>
         </div>
@@ -106,11 +106,11 @@ const Navbar = () => {
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
                     target="_blank"
                   >
-                    Contact Us
+                    Book a demo
                   </Link>
                   <Link
                     className="flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-base"
-                    href="/"
+                    href="https://app.joinsteward.com"
                   >
                     Login <ArrowRight className={classNames('h-4 w-4 text-white')} />
                   </Link>
