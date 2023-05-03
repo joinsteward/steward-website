@@ -67,7 +67,7 @@ const Navbar = () => {
               <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
                 Pay fees
               </Link>
-              <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/about">
+              <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
                 About Us
               </Link>
             </nav>
@@ -112,10 +112,7 @@ const Navbar = () => {
                 <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
                   Pay fees
                 </Link>
-                <Link
-                  className="flex cursor-pointer items-center hover:text-gray-900"
-                  href="/about"
-                >
+                <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
                   About Us
                 </Link>
                 <div className="!mt-10 space-y-4">
