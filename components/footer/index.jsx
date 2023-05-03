@@ -55,7 +55,7 @@ const company = [
   //   title: 'Blog',
   // },
   {
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform',
+    link: '/contact-us',
     title: 'Contact Us',
   },
 ]
