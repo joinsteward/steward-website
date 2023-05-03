@@ -36,16 +36,20 @@ const BusinessTools = () => {
         </div>
         <div className="flex min-h-fit flex-col overflow-hidden rounded-xl bg-blue-light-25">
           <div className="p-10">
-            <h5 className="mb-6 text-sm md:text-[18px]">PAYMENTS (Coming soon)</h5>
+            <h5 className="mb-6 text-sm md:text-[18px]">PAYMENTS</h5>
             <h3 className="mb-6 font-duplicate-san text-xl font-medium text-blue-light-700 md:text-3xl">
               School fees collection
             </h3>
             <p className="mb-4 text-sm leading-[30px] text-gray-600 md:text-xl ">
               Accept your school payments and fees collections from students and parents
             </p>
-            <button className="flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm">
-              Coming soon
-            </button>
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
+              target="_blank"
+              className="flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm"
+            >
+              Learn more <ArrowRight className="h-5 w-5" />
+            </Link>
           </div>
           <Image src={schoolfees} alt={schoolfees} className="mt-auto w-full" />
         </div>

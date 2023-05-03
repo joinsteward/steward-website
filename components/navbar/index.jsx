@@ -58,18 +58,18 @@ const Navbar = () => {
           </button>
           <div className="hidden w-full md:ml-auto md:mr-auto md:flex">
             <nav className="flex flex-row items-center gap-8 space-x-1 whitespace-nowrap text-sm font-medium text-gray-30 lg:text-base">
-              <Link className="cursor-pointer hover:text-gray-900" href="/">
+              <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
                 Payments
               </Link>
               <Link className="cursor-pointer hover:text-gray-900" href="/school-loan">
                 Loans
               </Link>
-              <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
+              {/* <Link className="cursor-pointer hover:text-gray-900" href="">
                 Pay fees
-              </Link>
-              <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
+              </Link> */}
+              {/* <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
                 About Us
-              </Link>
+              </Link> */}
             </nav>
           </div>
         </div>
@@ -103,18 +103,18 @@ const Navbar = () => {
           <div className="container mx-auto mt-25 flex  h-fit flex-col overflow-y-scroll px-6 pb-10 ">
             <div className="w-full space-y-16">
               <nav className="flex flex-col space-y-5 font-normal text-black ">
-                <Link className="cursor-pointer hover:text-gray-900" href="/">
+                <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
                   Payments
                 </Link>
                 <Link className="cursor-pointer hover:text-gray-900" href="/school-loan">
                   Loans
                 </Link>
-                <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
+                {/* <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
                   Pay fees
-                </Link>
-                <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
+                </Link> */}
+                {/* <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
                   About Us
-                </Link>
+                </Link> */}
                 <div className="!mt-10 space-y-4">
                   <Link
                     className="flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-white px-3 text-center text-xs font-medium text-black md:px-6 md:text-base"

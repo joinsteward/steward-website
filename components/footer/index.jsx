@@ -17,11 +17,11 @@ const product = [
   //   title: 'Payroll management ',
   // },
   {
-    link: '/',
+    link: '/school-loan',
     title: 'School loans ',
   },
   {
-    link: '/',
+    link: '/school-fee',
     title: 'Accept payments ',
   },
   // {
