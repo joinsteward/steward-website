@@ -67,9 +67,9 @@ const Navbar = () => {
               {/* <Link className="cursor-pointer hover:text-gray-900" href="">
                 Pay fees
               </Link> */}
-              {/* <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
+              <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
                 About Us
-              </Link> */}
+              </Link>
             </nav>
           </div>
         </div>
@@ -112,9 +112,9 @@ const Navbar = () => {
                 {/* <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
                   Pay fees
                 </Link> */}
-                {/* <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
+                <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/">
                   About Us
-                </Link> */}
+                </Link>
                 <div className="!mt-10 space-y-4">
                   <Link
                     className="flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-white px-3 text-center text-xs font-medium text-black md:px-6 md:text-base"
