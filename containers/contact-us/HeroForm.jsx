@@ -1,8 +1,24 @@
+import PhoneInputs from 'components/ui/input/PhoneInputs'
 import Input from 'components/ui/input/atom/Input'
 import { FormTextarea } from 'components/ui/input/atom/TextArea'
-import React from 'react'
+import React, { useState } from 'react'
 
 const HeroForm = () => {
+  const [personalInfo, setPersonalInfo] = useState({
+    localFormat: '',
+    internationalFormat: '',
+    countryCode: '',
+  })
+
+  const handlePhoneNumberChange = (localFormat, internationalFormat, countryCode) => {
+    setPersonalInfo({
+      ...personalInfo,
+      internationalFormat,
+      localFormat,
+      countryCode,
+    })
+  }
+
   return (
     <section className="gradient__bg">
       <div className="container mx-auto flex flex-wrap px-6  pt-12 pb-16 sm:px-0 md:pt-36 lg:px-16 xl:px-5">
@@ -26,11 +42,18 @@ const HeroForm = () => {
             <Input label="Country business is registered" placeholder="Enter name" />
           </div>
           <div class="relative mb-4 grid w-full gap-3 md:grid-cols-2">
-            <Input label="Phone number" placeholder="Enter name" />
+            <PhoneInputs
+              setValue={(localFormat, international, countryCode) =>
+                handlePhoneNumberChange(localFormat, international, countryCode)
+              }
+              value={personalInfo.internationalFormat}
+              label="Phone number"
+              placeholder="Enter name"
+            />
             <Input label="School email address (Optional)" placeholder="Enter name" />
           </div>
           <div class="relative mb-4 grid w-full gap-3 md:grid-cols-2">
-            <Input label="School website (If any) " placeholder="Enter name" />
+            <Input group="https://" label="School website (If any) " placeholder="Enter name" />
             <Input label="Number of Staffs" placeholder="Enter name" />
           </div>
           <div class="relative mb-4 grid w-full gap-3 md:grid-cols-2">
