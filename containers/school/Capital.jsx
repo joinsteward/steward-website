@@ -44,15 +44,15 @@ const Capital = () => {
   return (
     <section className="w-full">
       <div className="container mx-auto flex flex-col px-6 py-16  sm:px-0 lg:py-37 lg:px-16  xl:px-5">
-        <div className="mt-10 mb-12 grid w-full gap-10 md:mb-30 md:grid-cols-2">
-          <div className="flex min-h-fit flex-col overflow-hidden rounded-xl">
+        <div className="mt-10 mb-12 flex w-full flex-col gap-10 md:mb-30 md:flex-row">
+          <div className="min-h-fit flex-1 flex-col overflow-hidden rounded-xl">
             <Image
               className="max-h-full w-full rounded-xl object-contain object-center md:block"
               alt="schoolBanner"
               src={capital_img}
             />
           </div>
-          <div className="flex min-h-fit flex-col overflow-hidden rounded-xl py-5 md:py-10 md:px-10">
+          <div className="min-h-fit flex-1 flex-col overflow-hidden rounded-xl py-5 md:py-10 md:px-10">
             <h5 className="mb-4 font-duplicate-san text-2xl font-medium md:leading-[44px] xl:text-6xl">
               Steward Capital provides you
             </h5>
@@ -67,8 +67,8 @@ const Capital = () => {
           </div>
         </div>
 
-        <div className="mt-10 mb-12 grid w-full gap-10 md:mb-30 md:grid-cols-2">
-          <div className="flex min-h-fit flex-col overflow-hidden rounded-xl py-5 md:py-10 md:px-10">
+        <div className="mt-10 mb-12 flex w-full flex-col gap-10 md:mb-30 md:flex-row">
+          <div className="min-h-fit flex-1 flex-col overflow-hidden rounded-xl py-5 md:py-10 md:px-10">
             <h5 className="mb-4 font-duplicate-san text-2xl font-medium md:leading-[44px] xl:text-6xl">
               Tuition data for loan approvals
             </h5>
@@ -84,7 +84,7 @@ const Capital = () => {
               />
             </div>
           </div>
-          <div className="flex h-full flex-col overflow-hidden rounded-xl">
+          <div className="h-full flex-1 flex-col overflow-hidden rounded-xl">
             <Image
               className="h-full w-fit rounded-xl object-contain object-center md:block"
               alt="schoolBanner"
@@ -93,8 +93,8 @@ const Capital = () => {
           </div>
         </div>
 
-        <div className="mt-10 grid w-full gap-10 md:grid-cols-2">
-          <div className="flex min-h-fit flex-col overflow-hidden rounded-xl py-5 md:py-10 md:px-10">
+        <div className="mt-10 flex w-full flex-col gap-10 md:flex-row">
+          <div className="min-h-fit flex-1 flex-col overflow-hidden rounded-xl py-5 md:py-10 md:px-10">
             <h5 className="mb-4 font-duplicate-san text-2xl font-medium md:leading-[44px] xl:text-6xl">
               How to apply for loans
             </h5>
@@ -107,7 +107,7 @@ const Capital = () => {
               </div>
             ))}
           </div>
-          <div className="flex min-h-fit flex-col overflow-hidden rounded-xl">
+          <div className="min-h-fit flex-1 flex-col overflow-hidden rounded-xl">
             <Image
               className="max-h-full w-full rounded-xl object-contain object-center md:block"
               alt="schoolBanner"

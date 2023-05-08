@@ -23,7 +23,7 @@ const OnePlatform = () => {
         <div className="grid w-full gap-10 md:grid-cols-2">
           <div className="rounded-xl bg-white">
             <MulitPayment />
-            <div className="space-y-6 px-14">
+            <div className="space-y-6 px-12">
               <h4 className="font-duplicate-san text-3xl font-medium">Multiple payment options</h4>
               <p className="text-lg">
                 Accept payments through mobile money and bank transfers (coming soon) from students,
@@ -39,7 +39,7 @@ const OnePlatform = () => {
           </div>
           <div className="rounded-xl bg-white">
             <TrackRevenue />
-            <div className="space-y-6 px-14">
+            <div className="space-y-6 px-12">
               <h4 className="font-duplicate-san text-3xl font-medium">Track revenue growth</h4>
               <p className="text-lg">
                 Get a school business account that helps you track your revenue growth in one place
@@ -57,7 +57,7 @@ const OnePlatform = () => {
         <div className="mt-10 grid w-full gap-10 rounded-3xl bg-white md:grid-cols-2">
           <div className="rounded-xl">
             <TimeSpeed />
-            <div className="space-y-6 px-14">
+            <div className="space-y-6 px-12">
               <h4 className="font-duplicate-san text-3xl font-medium">
                 Get a collection platform in minutes
               </h4>
