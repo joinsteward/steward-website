@@ -10,7 +10,7 @@ export default function SchoolLoan() {
       <Hero />
       <Mission />
       <Investors />
-      <CtaBanner />
+      <CtaBanner withBg={false} />
     </LayoutWrapper>
   )
 }

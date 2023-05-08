@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
           <div className="grid gap-3 sm:grid-cols-2">
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
+              href="https://app.joinsteward.com/"
               target="_blank"
               className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:h-15 md:px-6 md:text-sm"
             >
