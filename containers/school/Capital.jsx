@@ -43,7 +43,7 @@ const applyList = [
 const Capital = () => {
   return (
     <section className="w-full">
-      <div className="container mx-auto flex flex-col px-6 py-16  sm:px-0 lg:py-37 lg:px-16  xl:px-5">
+      <div className="container mx-auto flex flex-col px-6 py-16 sm:px-0 lg:py-37 lg:px-16 xl:px-5">
         <div className="mt-10 mb-12 flex w-full flex-col gap-10 md:mb-30 md:flex-row">
           <div className="min-h-fit flex-1 flex-col overflow-hidden rounded-xl">
             <Image

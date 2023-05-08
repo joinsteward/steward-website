@@ -14,7 +14,7 @@ import React from 'react'
 const OnePlatform = () => {
   return (
     <section className="w-full bg-gray-50">
-      <div className="container mx-auto flex flex-col px-6 py-16 sm:px-0 lg:py-37 lg:px-16  xl:px-5">
+      <div className="container mx-auto flex flex-col px-6 py-16 sm:px-0 lg:py-37 lg:px-16 xl:px-5">
         <div className="mb-15 flex w-full justify-center text-center md:mb-30">
           <h1 className="mb-4 max-w-5xl font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
             One platform to manage all your payment collections for your school
