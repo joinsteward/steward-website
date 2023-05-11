@@ -58,10 +58,10 @@ const Navbar = () => {
           </button>
           <div className="hidden w-full md:ml-auto md:mr-auto md:flex">
             <nav className="flex flex-row items-center gap-8 space-x-1 whitespace-nowrap text-sm font-medium text-gray-30 lg:text-base">
-              <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
+              <Link className="cursor-pointer hover:text-gray-900" href="/payments">
                 Payments
               </Link>
-              <Link className="cursor-pointer hover:text-gray-900" href="/school-loan">
+              <Link className="cursor-pointer hover:text-gray-900" href="/loans">
                 Loans
               </Link>
               {/* <Link className="cursor-pointer hover:text-gray-900" href="">
@@ -103,13 +103,13 @@ const Navbar = () => {
           <div className="container mx-auto mt-25 flex  h-fit flex-col overflow-y-scroll px-6 pb-10 ">
             <div className="w-full space-y-16">
               <nav className="flex flex-col space-y-5 font-normal text-black ">
-                <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
+                <Link className="cursor-pointer hover:text-gray-900" href="/payments">
                   Payments
                 </Link>
-                <Link className="cursor-pointer hover:text-gray-900" href="/school-loan">
+                <Link className="cursor-pointer hover:text-gray-900" href="/loans">
                   Loans
                 </Link>
-                {/* <Link className="cursor-pointer hover:text-gray-900" href="/school-fee">
+                {/* <Link className="cursor-pointer hover:text-gray-900" href="/payments">
                   Pay fees
                 </Link> */}
                 <Link

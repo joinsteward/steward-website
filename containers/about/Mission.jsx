@@ -37,7 +37,7 @@ const Mission = () => {
             </div>
             <div className="w-fit space-y-8 text-center">
               <h2 className="font-duplicate-san text-4xl font-medium text-gray-900 md:text-5xl xl:text-7xl">
-                ~$600k
+                ~$300k
               </h2>
               <span className="text-base md:text-xl">Total funding</span>
             </div>

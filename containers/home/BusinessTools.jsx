@@ -25,7 +25,7 @@ const BusinessTools = () => {
               rate to expand and grow your school. No security is required.
             </p>
             <Link
-              href="/school-loan"
+              href="/loans"
               // target="_blank"
               className="flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm"
             >
@@ -44,7 +44,7 @@ const BusinessTools = () => {
               Accept your school payments and fees collections from students and parents
             </p>
             <Link
-              href="/school-fee"
+              href="/payments"
               // target="_blank"
               className="flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:px-6 md:text-sm"
             >
