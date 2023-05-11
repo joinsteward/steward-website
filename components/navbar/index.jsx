@@ -64,9 +64,6 @@ const Navbar = () => {
               <Link className="cursor-pointer hover:text-gray-900" href="/loans">
                 Loans
               </Link>
-              {/* <Link className="cursor-pointer hover:text-gray-900" href="">
-                Pay fees
-              </Link> */}
               <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/about">
                 About Us
               </Link>
