@@ -22,6 +22,7 @@ module.exports = {
         cta_banner: 'url(../assets/image/cta-bg.jpg)',
         school_banner: 'url(../assets/image/school_banner.jpg)',
         available_bg: 'url(../assets/image/available_bg.svg)',
+        cta_footer: 'url(../assets/image/cta_footer.svg)',
       },
       fontFamily: {
         sans: ['DM Sans', ...defaultTheme.fontFamily.sans],
