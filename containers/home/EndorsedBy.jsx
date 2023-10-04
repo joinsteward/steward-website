@@ -1,9 +1,8 @@
-import { Kenya, Nigeria, Uganda } from 'assets/icons'
-import { ambition_man, hero_lady, section_two, section_two_mobile } from 'assets/image'
+import { map_image } from 'assets/image'
 import Image from 'next/image'
 import React from 'react'
 
-const Ambitions = () => {
+const EndorsedBy = () => {
   return (
     <section
       id="loans"
@@ -15,7 +14,7 @@ const Ambitions = () => {
             <Image
               className="max-h-full w-full object-contain object-center"
               alt="hero"
-              src={ambition_man}
+              src={map_image}
             />
             <div className="mt-6 flex flex-wrap justify-between gap-4">
               <div className="space-y-2 md:space-y-4">
@@ -47,4 +46,4 @@ const Ambitions = () => {
   )
 }
 
-export default Ambitions
+export default EndorsedBy

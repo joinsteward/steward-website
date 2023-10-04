@@ -1,56 +1,116 @@
-import { backedby, Hero_img, Hero_img_mobile } from 'assets/image'
+import {
+  acas,
+  backedby,
+  capital,
+  future,
+  Hero_img,
+  Hero_img_mobile,
+  hero_lady,
+  monie,
+  venture,
+} from 'assets/image'
 import classNames from 'classnames'
 import { ArrowRight } from 'iconsax-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { ReactComponent as Capital } from 'assets/image/capital.svg'
 
 const Hero = () => {
   return (
     <section className="gradient__bg">
-      <div className="container mx-auto flex flex-col px-6 py-16  sm:px-0  md:flex-row lg:px-16 xl:px-5">
-        <div className="flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24 xl:my-16">
-          <h1 className="mb-4 font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
-            Financial Services for Private Schools across Africa
-          </h1>
-          <p className="mb-8 leading-relaxed md:text-2xl ">
-            Get loans, collect fees and manage finances with our school banking platform.
-          </p>
-          <div className="grid grid-cols-2 gap-3">
-            <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
-              target="_blank"
-              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:h-15 md:px-6 md:text-sm"
-            >
-              Contact Us <ArrowRight className={classNames('h-5 w-5 text-white')} />
-            </Link>
-            <Link
-              href="tel:+256706192709"
-              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:h-15 md:px-6 md:text-sm"
-            >
-              Call +256 706 192709
-            </Link>
+      <div className="container mx-auto flex flex-col px-6 py-16 sm:px-0 lg:px-16 xl:px-5">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24 xl:my-16">
+            <h1 className="mb-4 font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
+              Access your school's future revenue today
+            </h1>
+            <p className="mb-8 leading-relaxed md:text-xl ">
+              Steward helps schools across Africa to access their revenue before time, process
+              payments and support parents to pay school fees daily, weekly or monthly.
+            </p>
+            <div className="grid grid-cols-2 gap-3">
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
+                target="_blank"
+                className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:h-15 md:px-6 md:text-sm"
+              >
+                Contact Us <ArrowRight className={classNames('h-5 w-5 text-white')} />
+              </Link>
+              <Link
+                href="tel:+256706192709"
+                className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:h-15 md:px-6 md:text-sm"
+              >
+                Call +256 706 192709
+              </Link>
+            </div>
           </div>
-          <div className="my-8 box-border grid w-fit  grid-cols-6 items-center gap-16 sm:gap-10 md:mt-16 md:grid-cols-8  md:gap-20  xl:mt-28 xl:gap-0">
-            <h6 className="col-span-1 whitespace-nowrap text-xs sm:text-sm">Backed by</h6>
-            <Image
-              className="col-span-5 w-full max-w-[18rem] object-scale-down object-center md:col-span-7 xl:max-w-lg"
-              alt="hero"
-              src={backedby}
-            />
+          <div className="mb-8 w-full md:mb-0 md:w-1/2">
+            <div className="mt-8 w-full md:mt-0 md:p-4">
+              <div className="rounded-xl border border-gray-500 bg-white p-3 md:rounded-3xl md:p-6">
+                <Image
+                  className="max-h-full w-full object-contain object-center"
+                  alt="hero"
+                  src={hero_lady}
+                />
+                <div className="mt-6 flex flex-wrap justify-between gap-4">
+                  <div className="space-y-2 md:space-y-4">
+                    <div className="text-sm text-gray-600">Collection rate</div>
+                    <div className="font-medium md:text-2xl">97%</div>
+                  </div>
+                  <div className="space-y-2 md:space-y-4">
+                    <div className="text-sm text-gray-600">Expected Revenue</div>
+                    <div className="font-medium md:text-2xl">UGX 140,000,000</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2">
-          <Image
-            className="hidden max-h-full w-full object-contain object-center md:block"
-            alt="hero"
-            src={Hero_img}
-          />
-          <Image
-            className="block max-h-full w-full  object-contain object-center  md:hidden"
-            alt="hero"
-            src={Hero_img_mobile}
-          />
+
+        <div className="my-4 mx-auto box-border flex flex-wrap items-center ">
+          <div className="flex flex-wrap items-center">
+            <div className="w-full  md:w-1/6">
+              <h6 className="text-center text-xs sm:text-sm">
+                We are backed by Africa’s most prominent investors
+              </h6>
+            </div>
+            <div className="w-1/2 px-2 md:w-1/6">
+              <Image
+                className="w-full max-w-[18rem] object-scale-down object-center"
+                alt="hero"
+                src={future}
+              />
+            </div>
+            <div className="w-1/2 px-2 md:w-1/6">
+              <Image
+                className="w-full max-w-[18rem] object-scale-down object-center"
+                alt="hero"
+                src={venture}
+              />
+            </div>
+            <div className="w-1/3 px-2 md:w-1/6">
+              <Image
+                className="w-full max-w-[18rem] object-scale-down object-center"
+                alt="hero"
+                src={monie}
+              />
+            </div>
+            <div className="w-1/3 px-2 md:w-1/6">
+              <Image
+                className="w-full max-w-[18rem] object-scale-down object-center"
+                alt="hero"
+                src={capital}
+              />
+            </div>
+            <div className="w-1/3 px-2 md:w-1/6">
+              <Image
+                className="w-full max-w-[18rem] object-scale-down object-center"
+                alt="hero"
+                src={acas}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
