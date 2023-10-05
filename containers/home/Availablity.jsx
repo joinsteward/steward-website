@@ -13,7 +13,7 @@ const Availablity = () => {
         <p className="text-xs italic md:text-xl">
           We are trusted by several schools across Uganda.{' '}
         </p>
-        <div className="flex w-fit flex-wrap items-center gap-3 rounded-full border px-6 py-3 text-[10px] italic md:p-3 md:text-base">
+        <div className="flex w-fit flex-wrap items-center gap-3 rounded-2xl border px-6 py-3 text-[10px] italic md:rounded-full md:p-3 md:text-base">
           Available in Nigeria and Uganda, with more coming soon
           <span className="grid grid-cols-4 items-center gap-2">
             <Nigeria className="h-6 w-6 md:h-full md:w-full" />{' '}
