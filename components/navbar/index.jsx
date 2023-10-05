@@ -6,13 +6,45 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, CloseCircle, HambergerMenu, Menu } from 'iconsax-react'
 import CountryDropDown from './CountryDropDown'
+import DropDownMenue from './DropDownMenue'
+import Image from 'next/image'
+import { emergency_loan, fee_collection, income_advance, school_licensing } from 'assets/image'
+import { useRouter } from 'next/router'
+
+const actionList = [
+  {
+    name: 'Income advance',
+    desc: 'Allow Schools access their future revenue in 2-5 business days',
+    img: income_advance,
+    path: '/',
+  },
+  {
+    name: 'Emergency loans',
+    desc: 'Get quick access to loans for your school in 24-48 hours',
+    img: emergency_loan,
+    path: '/',
+  },
+  {
+    name: 'Fee collection system',
+    desc: 'Enables parents to pay that coincide with their pay cycles.',
+    img: fee_collection,
+    path: '/',
+  },
+  {
+    name: 'School Licensing',
+    desc: 'Eliminate the complexities of paperwork and legal procedures with steward',
+    img: school_licensing,
+    path: '/',
+  },
+]
 
 const Navbar = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false)
   const [click, setClick] = useState(false)
   const handleClick = () => {
     setClick(!click)
   }
-
+  const { push } = useRouter()
   const variants = {
     open: {
       //   scale: 1,
@@ -42,6 +74,25 @@ const Navbar = () => {
   //   return;
   // };
 
+  const actions = (
+    <ul className="space-y-1">
+      {actionList.map((item, index) => (
+        <li key={index}>
+          <div
+            onClick={() => push(item.path)}
+            class="flex cursor-pointer items-start rounded-md p-2 transition-all duration-100 ease-in-out hover:border hover:border-[#EBE9FE] hover:bg-gray-25"
+          >
+            <Image className="object-contain object-center" alt="hero" src={item.img} />
+            <div class="pl-6">
+              <h2 class="title-font mb-1 text-sm font-medium text-gray-900">Shooting Stars</h2>
+              <div class="text-xs">{item.desc}</div>
+            </div>
+          </div>
+        </li>
+      ))}
+    </ul>
+  )
+
   return (
     <header className="sticky top-0 left-0 right-0 z-50 flex h-20 justify-center border-b border-gray-300 bg-white py-4 px-6 lg:py-4 lg:px-16">
       <div className="container flex w-screen flex-row items-center justify-between">
@@ -66,9 +117,15 @@ const Navbar = () => {
 
           <div className="hidden w-full md:ml-auto md:mr-auto md:flex">
             <nav className="flex flex-row items-center gap-8 space-x-1 whitespace-nowrap text-sm font-medium text-gray-30 lg:text-base">
-              <Link className="cursor-pointer hover:text-gray-900" href="/payments">
+              {/* <Link className="cursor-pointer hover:text-gray-900" href="/payments">
                 Payments
-              </Link>
+              </Link> */}
+              <DropDownMenue
+                setDropdownOpen={setDropdownOpen}
+                dropdownOpen={dropdownOpen}
+                name="Products"
+                actions={actions}
+              />
               <Link className="cursor-pointer hover:text-gray-900" href="/loans">
                 Loans
               </Link>
