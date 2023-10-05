@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Link from 'next/link'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, CloseCircle, HambergerMenu, Menu } from 'iconsax-react'
+import { ArrowDown2, ArrowRight, ArrowUp2, CloseCircle, HambergerMenu, Menu } from 'iconsax-react'
 import CountryDropDown from './CountryDropDown'
 import DropDownMenue from './DropDownMenue'
 import Image from 'next/image'
@@ -38,6 +38,11 @@ const actionList = [
   },
 ]
 
+const links = [
+  { name: 'Product', links: actionList },
+  { name: 'Pay fees', link: '/' },
+  { name: 'About Us', link: '/' },
+]
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const [click, setClick] = useState(false)
@@ -66,13 +71,15 @@ const Navbar = () => {
       },
     },
   }
+  const [isDropdownOpen, setIsDropdownOpen] = useState(null)
 
-  // const handleNavClick = () => {
-  //   if (pathname !== "/") navigate("/");
-  //   setClick(false);
-
-  //   return;
-  // };
+  const toggleDropdown = (index) => {
+    setIsDropdownOpen(() => {
+      const newValue = +index
+      if (index === isDropdownOpen) return
+      return newValue
+    })
+  }
 
   const actions = (
     <ul className="space-y-1">
@@ -93,6 +100,28 @@ const Navbar = () => {
     </ul>
   )
 
+  const renderMenuItems = (links, isSubLink) => {
+    return links.map((item, index) => {
+      return (
+        <li key={index}>
+          <div
+            onClick={() => {
+              push(item.path)
+              handleClick()
+            }}
+            class="flex cursor-pointer items-start rounded-md p-2 transition-all duration-100 ease-in-out hover:border hover:border-[#EBE9FE] hover:bg-gray-25"
+          >
+            <Image className="object-contain object-center" alt="hero" src={item.img} />
+            <div class="pl-6">
+              <h2 class="title-font mb-1 text-sm font-medium text-gray-900">Shooting Stars</h2>
+              <div class="text-xs">{item.desc}</div>
+            </div>
+          </div>
+        </li>
+      )
+    })
+  }
+
   return (
     <header className="sticky top-0 left-0 right-0 z-50 flex h-20 justify-center border-b border-gray-300 bg-white py-4 px-6 lg:py-4 lg:px-16">
       <div className="container flex w-screen flex-row items-center justify-between">
@@ -102,13 +131,13 @@ const Navbar = () => {
           </Link>
 
           <div className="flex items-center gap-2 md:hidden">
-            <CountryDropDown align="right" />
+            {!click && <CountryDropDown align="right" />}
             <button
               onClick={handleClick}
               className={classNames('z-50 rounded-full p-1.5', { ['bg-gray-100']: !click })}
             >
               {click ? (
-                <CloseCircle className={classNames('h-5 w-5 text-black')} />
+                <XMarkIcon className={classNames('h-5 w-5 text-black')} />
               ) : (
                 <HambergerMenu className={classNames('h-5 w-5 text-black')} />
               )}
@@ -127,7 +156,7 @@ const Navbar = () => {
                 actions={actions}
               />
               <Link className="cursor-pointer hover:text-gray-900" href="/loans">
-                Loans
+                Pay fees
               </Link>
               <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/about">
                 About Us
@@ -160,44 +189,59 @@ const Navbar = () => {
           animate={click ? 'open' : 'closed'}
           variants={variants}
           className={classNames(
-            `absolute inset-0 block h-fit w-full rounded-b-xl bg-white shadow-sm md:hidden`
+            `absolute inset-0 flex h-full  min-h-[550px] w-full flex-col rounded-b-xl bg-white shadow-sm md:hidden`
           )}
         >
           <div className="container mx-auto mt-25 flex  h-fit flex-col overflow-y-scroll px-6 pb-10 ">
-            <div className="w-full space-y-16">
-              <nav className="flex flex-col space-y-5 font-normal text-black ">
-                <Link className="cursor-pointer hover:text-gray-900" href="/payments">
-                  Payments
-                </Link>
-                <Link className="cursor-pointer hover:text-gray-900" href="/loans">
-                  Loans
-                </Link>
-                {/* <Link className="cursor-pointer hover:text-gray-900" href="/payments">
-                  Pay fees
-                </Link> */}
-                <Link
-                  className="flex cursor-pointer items-center hover:text-gray-900"
-                  href="/about"
-                >
-                  About Us
-                </Link>
-                <div className="!mt-10 space-y-4">
-                  <Link
-                    className="flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-white px-3 text-center text-xs font-medium text-black md:px-6 md:text-base"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
-                    target="_blank"
-                  >
-                    Book a demo
-                  </Link>
-                  <Link
-                    className="flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-base"
-                    href="https://app.joinsteward.com"
-                  >
-                    Login <ArrowRight className={classNames('h-4 w-4 text-white')} />
-                  </Link>
-                </div>
+            <div className="w-full space-y-16 ">
+              <nav className="flex  flex-col space-y-5 font-normal text-black ">
+                {links.map((item, index) => (
+                  <li key={index} className="list-none border-b py-1.5">
+                    <button
+                      className={classNames('mb-3 !flex w-full !justify-between')}
+                      onClick={() => {
+                        if (item.links) {
+                          toggleDropdown(index)
+                        } else {
+                          push(item.link)
+                          handleClick()
+                        }
+                      }}
+                    >
+                      <span>{item.name}</span>
+                      {item.links && (
+                        <>
+                          {isDropdownOpen === index ? (
+                            <ArrowUp2 className="h-4 w-4 text-primary-700" />
+                          ) : (
+                            <ArrowDown2 className="h-4 w-4 text-primary-700" />
+                          )}{' '}
+                        </>
+                      )}
+                    </button>
+
+                    {isDropdownOpen === index && item.links && (
+                      <ul>{renderMenuItems(item.links, true)}</ul>
+                    )}
+                  </li>
+                ))}
               </nav>
             </div>
+          </div>
+
+          <div className="!mt-auto flex flex-wrap items-center justify-between gap-2 px-6 pb-10 pt-4">
+            <Link
+              className="flex items-center justify-center gap-2  text-center text-xs font-medium text-black md:px-6 md:text-base"
+              href="https://app.joinsteward.com"
+            >
+              Get started <ArrowRight className={classNames('h-4 w-4 text-black')} />
+            </Link>
+            <Link
+              href="tel:+256706192709"
+              className="flex  w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black p-2 text-center text-[11px] font-medium text-black"
+            >
+              Call +256 706 192709
+            </Link>
           </div>
         </motion.nav>
       </div>
