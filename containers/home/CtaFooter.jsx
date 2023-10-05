@@ -14,17 +14,17 @@ const CtaFooter = ({ withBg = true }) => {
           <p className="text-base md:text-2xl">
             Create an account and instantly help your school meet its liquidity needs.
           </p>
-          <div className="grid w-full gap-3 md:grid-cols-2">
+          <div className="grid w-full gap-3 md:w-fit md:grid-cols-2">
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
               target="_blank"
-              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-white px-3 text-center text-xs font-medium text-black md:h-15 md:px-6 md:text-sm"
+              className="flex  w-full items-center  justify-center gap-2 whitespace-nowrap rounded-lg bg-white px-7 py-4 text-center text-xs font-medium text-black md:text-sm"
             >
               Contact Us <ArrowRight className={classNames('h-5 w-5 text-black')} />
             </Link>
             <Link
               href="tel:+256706192709"
-              className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-3 text-center text-xs font-medium text-white md:h-15 md:px-6 md:text-sm"
+              className="flex  w-full items-center  justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-7 py-4 text-center text-xs font-medium text-white md:text-sm"
             >
               Call +256 706 192709
             </Link>
