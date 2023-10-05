@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, CloseCircle, HambergerMenu, Menu } from 'iconsax-react'
+import CountryDropDown from './CountryDropDown'
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -44,18 +45,25 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 left-0 right-0 z-50 flex h-20 justify-center border-b border-gray-300 bg-white py-4 px-6 lg:py-4 lg:px-16">
       <div className="container flex w-screen flex-row items-center justify-between">
-        <div className="z-50 flex w-full justify-between space-x-10 md:w-0 md:justify-start ">
+        <div className="z-50 flex w-full items-center justify-between space-x-10 md:w-0 md:justify-start ">
           <Link href="/">
             <Logo />
           </Link>
 
-          <button className="z-50 block md:hidden" onClick={handleClick}>
-            {click ? (
-              <CloseCircle className={classNames('h-6 w-6 text-black')} />
-            ) : (
-              <HambergerMenu className={classNames('h-6 w-6 text-black')} />
-            )}
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <CountryDropDown align="right" />
+            <button
+              onClick={handleClick}
+              className={classNames('z-50 rounded-full p-1.5', { ['bg-gray-100']: !click })}
+            >
+              {click ? (
+                <CloseCircle className={classNames('h-5 w-5 text-black')} />
+              ) : (
+                <HambergerMenu className={classNames('h-5 w-5 text-black')} />
+              )}
+            </button>
+          </div>
+
           <div className="hidden w-full md:ml-auto md:mr-auto md:flex">
             <nav className="flex flex-row items-center gap-8 space-x-1 whitespace-nowrap text-sm font-medium text-gray-30 lg:text-base">
               <Link className="cursor-pointer hover:text-gray-900" href="/payments">
@@ -73,6 +81,7 @@ const Navbar = () => {
 
         <div className="z-50 hidden md:flex">
           <div className="flex flex-row items-center space-x-4 font-medium md:ml-16">
+            <CountryDropDown />
             <Link
               className="flex  h-11 items-center justify-center px-3 text-xs font-medium text-gray-30 md:px-6 md:text-base"
               href="https://app.joinsteward.com"

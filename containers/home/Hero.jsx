@@ -13,10 +13,14 @@ import classNames from 'classnames'
 import { ArrowRight } from 'iconsax-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useMemo } from 'react'
 import { ReactComponent as Capital } from 'assets/image/capital.svg'
+import { removeAmountFraction } from 'utils/common'
+import ReturnCountry from 'utils/hooks'
 
 const Hero = () => {
+  const { countryIso } = ReturnCountry()
+
   return (
     <section className="gradient__bg">
       <div className="container mx-auto flex flex-col px-6 py-16 sm:px-0 lg:px-16 xl:px-5">
@@ -29,7 +33,7 @@ const Hero = () => {
               Steward helps schools across Africa to access their revenue before time, process
               payments and support parents to pay school fees daily, weekly or monthly.
             </p>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid gap-3 md:grid-cols-2">
               <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
                 target="_blank"
@@ -56,11 +60,13 @@ const Hero = () => {
                 <div className="mt-6 flex flex-wrap justify-between gap-4">
                   <div className="space-y-2 md:space-y-4">
                     <div className="text-sm text-gray-600">Collection rate</div>
-                    <div className="font-medium md:text-2xl">97%</div>
+                    <div className="font-duplicate-san font-medium md:text-2xl">97%</div>
                   </div>
                   <div className="space-y-2 md:space-y-4">
                     <div className="text-sm text-gray-600">Expected Revenue</div>
-                    <div className="font-medium md:text-2xl">UGX 140,000,000</div>
+                    <div className="font-duplicate-san font-medium md:text-2xl">
+                      {removeAmountFraction('140000000', countryIso, true)}
+                    </div>
                   </div>
                 </div>
               </div>

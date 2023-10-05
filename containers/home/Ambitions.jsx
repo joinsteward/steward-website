@@ -2,8 +2,12 @@ import { Kenya, Nigeria, Uganda } from 'assets/icons'
 import { ambition_man, hero_lady, section_two, section_two_mobile } from 'assets/image'
 import Image from 'next/image'
 import React from 'react'
+import { removeAmountFraction } from 'utils/common'
+import ReturnCountry from 'utils/hooks'
 
 const Ambitions = () => {
+  const { countryIso } = ReturnCountry()
+
   return (
     <section
       id="loans"
@@ -20,15 +24,17 @@ const Ambitions = () => {
             <div className="mt-6 flex flex-wrap justify-between gap-4">
               <div className="space-y-2 md:space-y-4">
                 <div className="text-sm text-gray-600">Expected Revenue</div>
-                <div className="font-medium md:text-2xl">UGX 40,000,000</div>
+                <div className="font-duplicate-san font-medium md:text-2xl">
+                  {removeAmountFraction('4000000', countryIso)}
+                </div>
               </div>
               <div className="space-y-2 md:space-y-4">
                 <div className="text-sm text-gray-600">Recovery rate</div>
-                <div className="font-medium md:text-2xl">87%</div>
+                <div className="font-duplicate-san font-medium md:text-2xl">87%</div>
               </div>
               <div className="space-y-2 md:space-y-4">
                 <div className="text-sm text-gray-600">Growth rate</div>
-                <div className="font-medium md:text-2xl">64%</div>
+                <div className="font-duplicate-san font-medium md:text-2xl">64%</div>
               </div>
             </div>
           </div>

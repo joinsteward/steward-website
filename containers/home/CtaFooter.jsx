@@ -12,9 +12,9 @@ const CtaFooter = ({ withBg = true }) => {
             We're fuelling the aspirations of thousands of schools. Let's fuel yours as well.
           </h1>
           <p className="text-base md:text-2xl">
-            Create an account and instantly help your school grow
+            Create an account and instantly help your school meet its liquidity needs.
           </p>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid w-full gap-3 md:grid-cols-2">
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
               target="_blank"
@@ -29,12 +29,6 @@ const CtaFooter = ({ withBg = true }) => {
               Call +256 706 192709
             </Link>
           </div>
-          <p className="text-base md:text-xl ">
-            or send us an email at
-            <span className="ml-1 font-medium italic">
-              <a href="mailto:admin@joinsteward.com">admin@joinsteward.com</a>
-            </span>{' '}
-          </p>
         </div>
       </div>
     </section>

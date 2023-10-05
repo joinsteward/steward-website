@@ -5,7 +5,7 @@ import React from 'react'
 const EndorsedBy = () => {
   return (
     <section className="flex w-full flex-col justify-center bg-purple-50 py-16 md:py-20 xl:py-28">
-      <div className="relative w-full px-6 sm:px-0 md:px-20">
+      <div className="container relative mx-auto w-full px-6 sm:px-0 md:px-20">
         <div className="mt-0 grid w-full items-center gap-10 md:grid-cols-2">
           <div className="flex min-h-fit flex-col overflow-hidden">
             <h1 className="mb-4 font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
@@ -15,14 +15,14 @@ const EndorsedBy = () => {
               From elementary schools to major educational corporations, countless establishments
               globally trust Steward to accelerate their growth.
             </p>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="flex flex-wrap gap-3">
               <Image
-                className="max-h-full w-full object-contain object-center"
+                className="max-w-[200px]  object-scale-down object-center"
                 alt="app"
                 src={gplay}
               />
               <Image
-                className="max-h-full w-full object-contain object-center"
+                className="max-w-[200px] object-scale-down object-center"
                 alt="app"
                 src={appstore}
               />
