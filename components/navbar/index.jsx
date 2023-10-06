@@ -30,12 +30,12 @@ const actionList = [
     img: fee_collection,
     path: '/',
   },
-  {
-    name: 'School Licensing',
-    desc: 'Eliminate the complexities of paperwork and legal procedures with steward',
-    img: school_licensing,
-    path: '/',
-  },
+  // {
+  //   name: 'School Licensing',
+  //   desc: 'Eliminate the complexities of paperwork and legal procedures with steward',
+  //   img: school_licensing,
+  //   path: '/',
+  // },
 ]
 
 const links = [
@@ -91,7 +91,7 @@ const Navbar = () => {
           >
             <Image className="object-contain object-center" alt="hero" src={item.img} />
             <div class="pl-6">
-              <h2 class="title-font mb-1 text-sm font-medium text-gray-900">Shooting Stars</h2>
+              <h2 class="title-font mb-1 text-sm font-medium text-gray-900">{item.name}</h2>
               <div class="text-xs">{item.desc}</div>
             </div>
           </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
           >
             <Image className="object-contain object-center" alt="hero" src={item.img} />
             <div class="pl-6">
-              <h2 class="title-font mb-1 text-sm font-medium text-gray-900">Shooting Stars</h2>
+              <h2 class="title-font mb-1 text-sm font-medium text-gray-900">{item.name}</h2>
               <div class="text-xs">{item.desc}</div>
             </div>
           </div>

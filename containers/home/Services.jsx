@@ -122,7 +122,8 @@ const Services = () => {
                         {removeAmountFraction('5156080', countryIso)}
                       </div>
                       <div className="text-[10px] text-gray-200 lg:text-xs">
-                        <span className="text-gray-300">Total repayment:</span> 5,310,762.40 UGX
+                        <span className="text-gray-300">Total repayment:</span>{' '}
+                        {removeAmountFraction('531076240', countryIso)}
                       </div>
                     </div>
                     <div>

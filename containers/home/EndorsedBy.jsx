@@ -17,12 +17,12 @@ const EndorsedBy = () => {
             </p>
             <div className="flex flex-wrap gap-3">
               <Image
-                className="max-w-[200px]  object-scale-down object-center"
+                className="max-w-[150px] object-scale-down object-center"
                 alt="app"
                 src={gplay}
               />
               <Image
-                className="max-w-[200px] object-scale-down object-center"
+                className="max-w-[150px] object-scale-down object-center"
                 alt="app"
                 src={appstore}
               />

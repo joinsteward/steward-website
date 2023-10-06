@@ -121,8 +121,9 @@ const CountryDropDown = ({ align }) => {
           </ul>
           <div className="mb-1 mt-2 rounded-md border border-warning-300 bg-warning-50 px-3 pt-0.5 pb-2">
             <div className="text-xs text-gray-600">
-              You are currently on the Uganda page of Steward Inc. Select a different location to
-              view Steward in other countries
+              You are currently on the{' '}
+              <span className="font-medium">{selectCountry.country} page</span> of Steward Inc.
+              Select a different location to view Steward in other countries
             </div>
           </div>
         </div>
