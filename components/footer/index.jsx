@@ -152,7 +152,9 @@ const Footer = () => {
             <h2 className="mb-3 text-base font-semibold text-black">Lagos Office</h2>
             <nav className="mb-10 list-none space-y-3 text-sm font-normal">
               <li className="space-y-3">
-                <p className="text-gray-600">Delaware 8 The Green Dover, DE 19901</p>
+                <p className="text-gray-600">
+                  1A Hughes Avenue, Off Herbert Macualay Way, Yaba, Lagos State, Nigeria
+                </p>
                 <p className="text-gray-600">ugsupport@joinsteward.com</p>
                 <p className="text-gray-600">+234 708355828284</p>
               </li>
