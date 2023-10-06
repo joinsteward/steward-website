@@ -274,3 +274,18 @@
   box-shadow: none !important;
   border-left: 1px solid #e5e5e5;
 }
+
+.infinity-10 {
+  width: 90px;
+  height: 12px;
+  background: linear-gradient(90deg, currentColor 50%, #0000 0) 0 0%,
+    linear-gradient(-90deg, currentColor 50%, #0000 0) 0 0%;
+  background-size: 20px 100%;
+  background-repeat: repeat-x;
+  animation: i10 1s infinite linear;
+}
+@keyframes i10 {
+  100% {
+    background-position: -20px 0%, 20px 0%;
+  }
+}

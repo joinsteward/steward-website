@@ -1,15 +1,18 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect, useMemo } from 'react'
 import Transition from 'utils/Transition'
 import { NigeriaLogo, UgandaLogo } from 'assets/image'
 import Image from 'next/image'
+import ReturnCountry from 'utils/hooks'
 
 const country = [
-  { country: 'Uganda', iso: 'UGX', img: UgandaLogo },
-  { country: 'Nigeria', iso: 'NGN', img: NigeriaLogo, soon: true },
+  { country: 'Uganda', iso: 'UG', img: UgandaLogo, currency: 'UGX' },
+  { country: 'Nigeria', iso: 'NGA', img: NigeriaLogo, currency: 'NGN', soon: true },
 ]
 const CountryDropDown = ({ align }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
-  const [selectCountry, setSelectCountry] = useState({})
+  const [select, setSelect] = useState({})
+
+  const { selectCountry, setSelectCountry } = ReturnCountry()
 
   const trigger = useRef(null)
   const dropdown = useRef(null)
@@ -35,22 +38,16 @@ const CountryDropDown = ({ align }) => {
     document.addEventListener('keydown', keyHandler)
     return () => document.removeEventListener('keydown', keyHandler)
   })
-  useEffect(() => {
-    const getCountry = localStorage.getItem('country')
-
-    if (!getCountry) {
-      localStorage.setItem('country', 'UGX')
-      const selected = country.find((item) => item.iso === 'UGX')
-      setSelectCountry(selected)
-    } else {
-      const selected = country.find((item) => item.iso === getCountry)
-      setSelectCountry(selected)
-    }
-  }, [])
 
   const setCountry = (items) => {
     setSelectCountry(items)
-    localStorage.setItem('country', items.iso)
+    localStorage.setItem(
+      'country',
+      JSON.stringify({
+        iso: items.iso,
+        currency: items.currency,
+      })
+    )
     location.reload()
   }
 
@@ -122,7 +119,7 @@ const CountryDropDown = ({ align }) => {
           <div className="mb-1 mt-2 rounded-md border border-warning-300 bg-warning-50 px-3 pt-0.5 pb-2">
             <div className="text-xs text-gray-600">
               You are currently on the{' '}
-              <span className="font-medium">{selectCountry.country} page</span> of Steward Inc.
+              <span className="font-medium">{selectCountry?.country} page</span> of Steward Inc.
               Select a different location to view Steward in other countries
             </div>
           </div>
