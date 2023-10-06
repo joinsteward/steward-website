@@ -3,10 +3,10 @@ import numeral from 'numeral'
 export const getCurrency = {
   EUR: '€',
   ZAR: 'R',
-  USD: '$',
+  USD: 'USD',
   UGX: 'UGX',
   RWF: 'RF',
-  NGN: '₦',
+  NGN: 'NGN',
   KES: 'K',
   GHS: 'GH¢',
 }
