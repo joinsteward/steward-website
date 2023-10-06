@@ -80,7 +80,7 @@ const CountryDropDown = ({ align }) => {
       </button>
 
       <Transition
-        className={`absolute top-full z-10 mt-3 min-w-[240px] origin-top-right overflow-hidden rounded-md border border-slate-200 bg-white p-3 shadow-lg md:min-w-[320px] ${
+        className={`absolute top-full z-10 mt-3 min-w-[250px] origin-top-right overflow-hidden rounded-md border border-slate-200 bg-white p-3 shadow-lg md:min-w-[320px] ${
           align === 'right' ? 'right-0' : 'left-0'
         }`}
         show={dropdownOpen}
