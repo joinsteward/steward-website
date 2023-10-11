@@ -49,8 +49,8 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="mb-8 w-full md:mb-0 md:w-1/2">
-            <div className="mt-8 w-full md:mt-0 md:p-4">
+          <div className="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
+            <div className="mt-8 w-full max-w-xl md:mt-0 md:p-4">
               <div className="rounded-xl border border-gray-500 bg-white p-3 md:rounded-3xl md:p-6">
                 <Image
                   className="max-h-full w-full object-contain object-center"
@@ -74,7 +74,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="my-4 mx-auto box-border flex flex-wrap items-center ">
+        <div className="my-4 mx-auto box-border flex flex-wrap items-center">
           <div className="flex flex-wrap items-center">
             <div className="mb-5 w-full md:w-1/6">
               <h6 className="text-center text-xs sm:text-sm">
@@ -83,35 +83,35 @@ const Hero = () => {
             </div>
             <div className="w-1/2 px-2 md:w-1/6">
               <Image
-                className="w-full max-w-[18rem] object-scale-down object-center"
+                className="w-full max-w-full object-scale-down object-center"
                 alt="hero"
                 src={future}
               />
             </div>
             <div className="w-1/2 px-2 md:w-1/6">
               <Image
-                className="w-full max-w-[18rem] object-scale-down object-center"
+                className="w-full max-w-full object-scale-down object-center"
                 alt="hero"
                 src={venture}
               />
             </div>
             <div className="w-1/3 px-2 md:w-1/6">
               <Image
-                className="w-full max-w-[18rem] object-scale-down object-center"
+                className="w-full max-w-full object-scale-down object-center"
                 alt="hero"
                 src={monie}
               />
             </div>
             <div className="w-1/3 px-2 md:w-1/6">
               <Image
-                className="w-full max-w-[18rem] object-scale-down object-center"
+                className="w-full max-w-full object-scale-down object-center"
                 alt="hero"
                 src={capital}
               />
             </div>
             <div className="w-1/3 px-2 md:w-1/6">
               <Image
-                className="w-full max-w-[18rem] object-scale-down object-center"
+                className="w-full max-w-full object-scale-down object-center"
                 alt="hero"
                 src={acas}
               />

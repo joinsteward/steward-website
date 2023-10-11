@@ -95,7 +95,9 @@ const Footer = () => {
             <Logo className="mb-2 " />
             <h5 className="mb-4 text-sm font-bold text-gray-600">wwww.joinsteward.com</h5>
             <div className="flex items-center gap-3">
-              <Twitter /> <Linkedin /> <Facebook />
+              <Twitter href="https://twitter.com/joinsteward" target="_blank" />
+              <Linkedin href="https://www.linkedin.com/company/joinsteward" target="_blank" />
+              <Facebook href="https://facebook.com/joinsteward" target="_blank" />
             </div>
           </div>
           <div className="mt-10 md:mt-0">
@@ -143,7 +145,7 @@ const Footer = () => {
                 <p className="text-gray-600">
                   1st Floor, Post Bank Building, Nansana, Wakiso, Uganda
                 </p>
-                <p className="text-gray-600">ugsupport@joinsteward.com</p>
+                <p className="text-gray-600">support@joinsteward.com</p>
                 <p className="text-gray-600">+256 706 192709</p>
               </li>
             </nav>
@@ -155,8 +157,8 @@ const Footer = () => {
                 <p className="text-gray-600">
                   1A Hughes Avenue, Off Herbert Macualay Way, Yaba, Lagos State, Nigeria
                 </p>
-                <p className="text-gray-600">ugsupport@joinsteward.com</p>
-                <p className="text-gray-600">+234 708355828284</p>
+                <p className="text-gray-600">support@joinsteward.com</p>
+                {/* <p className="text-gray-600">+234 708355828284</p> */}
               </li>
             </nav>
           </div>
@@ -165,7 +167,7 @@ const Footer = () => {
             <nav className="mb-10 list-none space-y-3 text-sm font-normal">
               <li className="space-y-3">
                 <p className="text-gray-600">Delaware 8 The Green Dover, DE 19901</p>
-                <p className="text-gray-600">ugsupport@joinsteward.com</p>
+                <p className="text-gray-600">support@joinsteward.com</p>
               </li>
             </nav>
           </div>
