@@ -74,8 +74,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="my-4 mx-auto box-border flex flex-wrap items-center">
-          <div className="flex flex-wrap items-center">
+        <div className="my-4 mx-auto box-border flex w-full flex-wrap items-center justify-center ">
+          <div className="flex w-full flex-wrap items-center justify-between">
             <div className="mb-5 w-full md:w-1/6">
               <h6 className="text-center text-xs sm:text-sm">
                 We are backed by Africa’s most prominent investors
