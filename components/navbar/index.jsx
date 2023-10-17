@@ -40,8 +40,8 @@ const actionList = [
 
 const links = [
   { name: 'Product', links: actionList },
-  { name: 'Pay fees', link: '/' },
-  { name: 'About Us', link: '/' },
+  { name: 'Pay fees', link: '/payments' },
+  { name: 'About Us', link: '/about' },
 ]
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
@@ -155,7 +155,7 @@ const Navbar = () => {
                 name="Products"
                 actions={actions}
               />
-              <Link className="cursor-pointer hover:text-gray-900" href="/loans">
+              <Link className="cursor-pointer hover:text-gray-900" href="/payments">
                 Pay fees
               </Link>
               <Link className="flex cursor-pointer items-center hover:text-gray-900" href="/about">
