@@ -11,15 +11,15 @@ const Hero = () => {
   return (
     <section className="">
       <div className="container mx-auto flex flex-col items-center overflow-hidden  px-6 pt-12 sm:px-0 md:pt-36 lg:px-16 xl:px-5">
-        <div className="mb-15 max-w-xl text-center md:mb-30">
-          <h1 className="mb-4  font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
-            Accept payment and school fees collection
+        <div className="mb-15 max-w-3xl text-center md:mb-30">
+          <h1 className="mb-4 font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
+            Fee payment infrastructure for Schools
           </h1>
           <p className="mb-8 leading-relaxed md:text-xl ">
-            Steward helps you accept school fees and other payments from your students, staffs and
-            vendors
+            Stewards helps your parents to pay daily, weekly or monthly so that they can align their
+            school fees payments to their pay cycle.
           </p>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="mx-auto grid max-w-lg gap-3 sm:grid-cols-2">
             <Link
               href="https://app.joinsteward.com/"
               target="_blank"

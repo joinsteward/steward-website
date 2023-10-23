@@ -41,7 +41,7 @@ const Ambitions = () => {
         </div>
         <div className="flex min-h-fit flex-col overflow-hidden">
           <h1 className="mb-4 font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
-            We create growth opportunities for small but ambitious schools.
+            We create growth opportunities for Schools of all types
           </h1>
           <p className="mb-8 leading-relaxed md:text-xl ">
             Steward supports schools that are enthusiastic about growing and providing quality

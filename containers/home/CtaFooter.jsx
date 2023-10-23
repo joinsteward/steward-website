@@ -3,17 +3,30 @@ import { ArrowRight } from 'iconsax-react'
 import Link from 'next/link'
 import React from 'react'
 
-const CtaFooter = ({ withBg = true }) => {
+const defaultData = {
+  title: 'Help your school automate and centralise payments, invoicing and financial operations.',
+  subtitle: 'Create an account and instantly help your school meet its liquidity needs.',
+  bg: 'bg-cta_footer',
+}
+const CtaFooter = ({
+  withBg = true,
+  title = defaultData.title,
+  subtitle = defaultData.subtitle,
+  bg = defaultData.bg,
+}) => {
   return (
-    <section className="flex w-full flex-col justify-center bg-cta_footer bg-cover bg-no-repeat py-16 md:py-20 xl:py-28">
+    <section
+      className={classNames(
+        'flex w-full flex-col justify-center bg-cover bg-no-repeat py-16 md:py-20 xl:py-28',
+        bg
+      )}
+    >
       <div className="container mx-auto space-y-4 px-10 text-white md:max-w-5xl md:space-y-10 md:px-16 xl:px-0">
         <div className="mx-auto flex max-w-3xl flex-col items-center justify-center space-y-6 text-center">
           <h1 className="custom-font font-duplicate-san text-3xl font-bold !leading-tight !tracking-wide md:text-5xl">
-            We're fuelling the aspirations of thousands of schools. Let's fuel yours as well.
+            {title}
           </h1>
-          <p className="text-base md:text-2xl">
-            Create an account and instantly help your school meet its liquidity needs.
-          </p>
+          <p className="text-base md:text-2xl">{subtitle}</p>
           <div className="grid w-full gap-3 md:w-fit md:grid-cols-2">
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
@@ -29,6 +42,9 @@ const CtaFooter = ({ withBg = true }) => {
               Call +256 706 192709
             </Link>
           </div>
+          <p className="mt-4 text-base text-white md:text-2xl">
+            or send us an email at <span className="italic">admin@joinsteward.com</span>
+          </p>
         </div>
       </div>
     </section>
