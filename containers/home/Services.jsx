@@ -25,7 +25,7 @@ const Services = () => {
       <div className="container relative mx-auto flex w-full flex-col items-center px-6 sm:px-0 ">
         <div className="w-fit rounded-full border px-3 py-1">Services</div>
         <div className="mt-8 max-w-xl text-center font-duplicate-san text-xl font-normal md:text-3xl lg:!text-4xl xl:!text-6xl">
-          Simple Financial Tools for Private Schools
+          Simple Financial Tools for Schools
         </div>
         <div className="mt-5 max-w-md text-center md:text-2xl">
           We are a financial service provider for private Schools across Africa
@@ -100,7 +100,7 @@ const Services = () => {
                     </h1>
                     <p className="text-xs lg:text-xl">
                       Get access to working capital to run your operations efficiently within 24-48
-                      hours
+                      hours.
                     </p>
                     <div className="flex h-8 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-3 text-center text-xs font-medium lg:h-10 lg:px-6 lg:text-sm">
                       Learn more

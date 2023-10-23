@@ -27,11 +27,11 @@ const Hero = () => {
         <div className="flex flex-col items-center md:flex-row">
           <div className="flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24 xl:my-16">
             <h1 className="mb-4 font-duplicate-san text-3xl font-medium text-gray-900 md:text-4xl xl:text-6xl">
-              Access your school's future revenue today
+              Financial services for schools across Africa
             </h1>
             <p className="mb-8 leading-relaxed md:text-xl ">
-              Steward helps schools across Africa to access their revenue before time, process
-              payments and support parents to pay school fees daily, weekly or monthly.
+              Steward automates and centralises payments, invoicing, reconciliation and overall
+              financial operations for your school.
             </p>
             <div className="grid gap-3 md:grid-cols-2">
               <Link

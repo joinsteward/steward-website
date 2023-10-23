@@ -10,7 +10,12 @@ export default function SchoolLoan() {
     <LayoutWrapper>
       <Hero />
       <Services />
-      <CtaFooter />
+      <CtaFooter
+        title={`We're fuelling the aspirations of thousands of schools. Let's fuel yours as well.`}
+        subtitle="Create an account and instantly help your school meet its liquidity needs."
+        bg="bg-black"
+        withBg={false}
+      />
     </LayoutWrapper>
   )
 }
