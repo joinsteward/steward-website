@@ -36,18 +36,47 @@ const Services = () => {
             <div className="absolute h-full w-full bg-gradient-to-t from-black via-black/90 text-white lg:bg-gradient-to-r">
               <div className="relative flex h-full w-full items-end text-white lg:items-center">
                 <div className="max-w-xl space-y-4 p-4 lg:p-10">
+                  <div className="space-y-2 lg:hidden">
+                    <div className="flex w-fit items-center gap-3 rounded-xl border-2 border-purple-700 bg-black p-2 lg:p-4">
+                      <CheckIcon />
+                      <p className="text-xs lg:text-sm">{`Payment of ${removeAmountFraction(
+                        '4500000',
+                        countryIso,
+                        true
+                      )} received`}</p>
+                    </div>
+                    <div className="flex w-fit items-center gap-3 rounded-xl border-2 border-purple-700 bg-black p-2 lg:p-4">
+                      <CheckIcon />
+                      <p className="text-xs lg:text-sm">Cash payment logged</p>
+                    </div>
+                  </div>
                   <h1 className="font-duplicate-san text-lg font-medium lg:text-4xl">
-                    Income advance
+                    Fee collection system.
                   </h1>
                   <p className="text-xs lg:text-xl">
-                    We give you an advance against your next term's revenue to make renovations,
-                    stock food and pay your teachers. No security required.
+                    Enable your parents to pay you on timelines that coincide with their pay cycles
+                    - daily, weekly or monthly.
                   </p>
-                  <div className="flex h-8 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-3 text-center text-xs font-medium lg:h-10 lg:px-6 lg:text-sm">
+                  <div className="flex h-8 w-fit cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-3 text-center text-xs font-medium lg:h-10 lg:px-6 lg:text-sm">
                     Learn more
                   </div>
                 </div>
-                <div className="absolute bottom-0 right-0 hidden h-[256px] w-[300px] -translate-x-4 -translate-y-4 rounded-xl border-2 border-purple-700 bg-black p-4 lg:block">
+
+                <div className="absolute bottom-0 right-0 hidden -translate-x-25 -translate-y-25  space-y-2 lg:block">
+                  <div className="flex w-fit items-center gap-3 rounded-xl border-2 border-purple-700 bg-black p-2 lg:p-4">
+                    <CheckIcon />
+                    <p className="text-xs lg:text-sm">{`Payment of ${removeAmountFraction(
+                      '4500000',
+                      countryIso,
+                      true
+                    )} received`}</p>
+                  </div>
+                  <div className="flex w-fit items-center gap-3 rounded-xl border-2 border-purple-700 bg-black p-2 lg:p-4">
+                    <CheckIcon />
+                    <p className="text-xs lg:text-sm">Cash payment logged</p>
+                  </div>
+                </div>
+                {/* <div className="absolute bottom-0 right-0 hidden h-[256px] w-[300px] -translate-x-4 -translate-y-4 rounded-xl border-2 border-purple-700 bg-black p-4 lg:block">
                   <div className="flex items-center justify-between border-b border-gray-400 pb-3">
                     <h5 className="font-duplicate-san text-sm font-medium">Income Advance</h5>
                     <DotedIcon />
@@ -76,7 +105,7 @@ const Services = () => {
                       Request advance
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <Image
@@ -90,7 +119,7 @@ const Services = () => {
               src={lady_lap_mobile}
             />
           </div>
-          <div className="my-6 grid gap-4 lg:grid-cols-2">
+          {/* <div className="my-6 grid gap-4 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-2xl">
               <div className="absolute flex h-full w-full items-center bg-gradient-to-t from-black via-black/80 text-white">
                 <div className="relative flex h-full w-full items-end text-white">
@@ -181,9 +210,9 @@ const Services = () => {
                 src={lady_cup}
               />
             </div>
-          </div>
+          </div> */}
 
-          <div className="relative overflow-hidden rounded-2xl">
+          <div className="relative mt-6 overflow-hidden rounded-2xl">
             <div className="absolute h-full w-full  bg-gradient-to-t from-black via-black/90 text-white lg:bg-gradient-to-l">
               <div className="relative flex h-full w-full items-end text-white lg:items-center lg:justify-end">
                 <div className="max-w-xl space-y-4 p-4 lg:p-10">
@@ -194,7 +223,7 @@ const Services = () => {
                     Automate and customise your employee’s pay, allow teachers access up to 50% of
                     their salary before payday and much more.
                   </p>
-                  <div className="flex h-8 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-3 text-center text-xs font-medium lg:h-10 lg:px-6 lg:text-sm">
+                  <div className="flex h-8 w-fit cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-3 text-center text-xs font-medium lg:h-10 lg:px-6 lg:text-sm">
                     Coming soon
                   </div>
                 </div>
