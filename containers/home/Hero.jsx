@@ -39,7 +39,7 @@ const Hero = () => {
                 target="_blank"
                 className="flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-black px-7 py-4 text-center text-xs font-medium text-white md:text-sm"
               >
-                Contact Us <ArrowRight className={classNames('h-5 w-5 text-white')} />
+                Request a demo <ArrowRight className={classNames('h-5 w-5 text-white')} />
               </Link>
               <Link
                 href="tel:+256706192709"
