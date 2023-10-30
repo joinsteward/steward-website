@@ -29,7 +29,7 @@ const CtaFooter = ({
           <p className="text-base md:text-2xl">{subtitle}</p>
           <div className="grid w-full gap-3 md:w-fit md:grid-cols-2">
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd0ONsW10nJ6dlf1zp3ALYA8H2nfctvKQYfqfpedAahoaYu_A/viewform?pli=1"
               target="_blank"
               className="flex  w-full items-center  justify-center gap-2 whitespace-nowrap rounded-lg bg-white px-7 py-4 text-center text-xs font-medium text-black md:text-sm"
             >

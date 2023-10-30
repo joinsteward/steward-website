@@ -175,7 +175,7 @@ const Navbar = () => {
               Sign In
             </Link>
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdAIO--jEsER0tbLHVvQBCBuEittEPzN1em-Gw5GDMyeIqyrg/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd0ONsW10nJ6dlf1zp3ALYA8H2nfctvKQYfqfpedAahoaYu_A/viewform?pli=1"
               target="_blank"
               className="flex h-11 items-center justify-center gap-2 rounded-lg bg-black px-3 text-center text-xs font-medium text-white md:px-6 md:text-base"
             >
