@@ -36,14 +36,14 @@ const CtaFooter = ({
               Contact Us <ArrowRight className={classNames('h-5 w-5 text-black')} />
             </Link>
             <Link
-              href="tel:+256706192709"
+              href="tel:+2349160011009"
               className="flex  w-full items-center  justify-center gap-2 whitespace-nowrap rounded-lg border border-white px-7 py-4 text-center text-xs font-medium text-white md:text-sm"
             >
-              Call +256 706 192709
+              Call +234 916 0011 009
             </Link>
           </div>
           <p className="mt-4 text-base text-white md:text-2xl">
-            or send us an email at <span className="italic">admin@joinsteward.com</span>
+            or send us an email at <span className="italic">support@joinsteward.com</span>
           </p>
         </div>
       </div>

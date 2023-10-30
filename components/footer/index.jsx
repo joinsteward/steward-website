@@ -140,7 +140,7 @@ const Footer = () => {
           </div>
           <div />
           {/*  */}
-          <div className="mt-10 md:mt-0">
+          {/* <div className="mt-10 md:mt-0">
             <h2 className="mb-3 text-base font-semibold text-black">Uganda Office</h2>
             <nav className="mb-10 list-none space-y-3  text-sm font-normal md:text-[16px]">
               <li className="space-y-3">
@@ -151,7 +151,7 @@ const Footer = () => {
                 <p className="text-gray-600">+256 706 192709</p>
               </li>
             </nav>
-          </div>
+          </div> */}
           <div>
             <h2 className="mb-3 text-base font-semibold text-black">Lagos Office</h2>
             <nav className="mb-10 list-none space-y-3  text-sm font-normal md:text-[16px]">
@@ -160,7 +160,9 @@ const Footer = () => {
                   1A Hughes Avenue, Off Herbert Macualay Way, Yaba, Lagos State, Nigeria
                 </p>
                 <p className="text-gray-600">support@joinsteward.com</p>
-                {/* <p className="text-gray-600">+234 708355828284</p> */}
+                <a href="tel:+2349160011009" className="text-gray-600">
+                  +234 916 0011 009
+                </a>
               </li>
             </nav>
           </div>

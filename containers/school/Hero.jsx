@@ -28,10 +28,10 @@ const Hero = () => {
               Apply for a loan <ArrowRight className={classNames('h-5 w-5 text-white')} />
             </Link>
             <Link
-              href="tel:+256706192709"
+              href="tel:+2349160011009"
               className="flex h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-black px-3 text-center text-xs font-medium text-black md:h-15 md:px-6 md:text-sm"
             >
-              Call +256 706 192709
+              Call +234 916 0011 009
             </Link>
           </div>
         </div>

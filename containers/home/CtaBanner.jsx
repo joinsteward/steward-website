@@ -17,17 +17,17 @@ const CtaBanner = ({ withBg = true }) => {
             Create an account and instantly help your school grow
           </p>
           <Link
-            href="tel:+256706192709"
+            href="tel:+2349160011009"
             className={`flex h-11 w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg border ${
               withBg ? 'border-white' : 'bg-primary-700 text-white'
             } px-3 text-center text-xs font-medium md:h-15 md:px-6 md:text-sm`}
           >
-            Call +256 706 192709
+            Call +2349160011009
           </Link>
           <p className="text-base md:text-xl ">
             or send us an email at
             <span className="ml-1 font-medium italic">
-              <a href="mailto:admin@joinsteward.com">admin@joinsteward.com</a>
+              <a href="mailto:admin@joinsteward.com">support@joinsteward.com</a>
             </span>{' '}
           </p>
         </div>
