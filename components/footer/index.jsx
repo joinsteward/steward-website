@@ -3,23 +3,23 @@ import Link from 'next/link'
 import React from 'react'
 
 const product = [
-  {
-    link: '/',
-    title: 'Income advance',
-  },
+  // {
+  //   link: '/',
+  //   title: 'Income advance',
+  // },
 
-  {
-    link: '/',
-    title: 'Short term loans',
-  },
+  // {
+  //   link: '/',
+  //   title: 'Short term loans',
+  // },
   {
     link: '/',
     title: 'Fee collection system ',
   },
-  // {
-  //   link: '/loans',
-  //   title: 'School loans ',
-  // },
+  {
+    link: '/',
+    title: 'Payroll & salary advance',
+  },
   // {
   //   link: '/payments',
   //   title: 'Accept payments ',

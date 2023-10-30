@@ -4,7 +4,7 @@ import React from 'react'
 
 const Availablity = () => {
   return (
-    <section className="flex w-full flex-col justify-center bg-available_bg bg-cover bg-no-repeat py-16 md:py-20 xl:py-40">
+    <section className="flex w-full flex-col justify-center bg-available_bg bg-cover bg-no-repeat py-16 md:py-24 xl:py-48">
       <div className="container mx-auto space-y-4 px-10 md:max-w-5xl md:space-y-10 md:px-16 xl:px-0 ">
         <h1 className="font-duplicate-san text-xl font-light md:text-3xl  lg:!text-4xl xl:!text-6xl">
           What matters is the enormity of the ambition, not the size of the school. Ambitious
