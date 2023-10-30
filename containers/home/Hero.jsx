@@ -3,6 +3,7 @@ import {
   backedby,
   capital,
   future,
+  hero_flower,
   Hero_img,
   Hero_img_mobile,
   hero_lady,
@@ -22,7 +23,7 @@ const Hero = () => {
   const { countryIso } = ReturnCountry()
 
   return (
-    <section className="gradient__bg">
+    <section className="gradient__bg overflow-hidden">
       <div className="container mx-auto flex flex-col px-6 py-16 sm:px-0 lg:px-16 xl:px-5">
         <div className="flex flex-col items-center md:flex-row">
           <div className="flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24 xl:my-16">
@@ -49,8 +50,13 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
-            <div className="mt-8 w-full max-w-xl md:mt-0 md:p-4">
+          <div className="relative mb-8 flex w-full justify-center md:mb-0 md:w-1/2">
+            <Image
+              className="absolute right-0 top-0 max-h-fit w-fit -translate-y-10 translate-x-20 object-contain object-center md:-translate-y-14 md:translate-x-10 2xl:-translate-y-14 2xl:-translate-x-8"
+              alt="hero_flower"
+              src={hero_flower}
+            />
+            <div className=" mt-8 w-full max-w-xl md:mt-0 md:p-4">
               <div className="rounded-xl border border-gray-500 bg-white p-3 md:rounded-3xl md:p-6">
                 <Image
                   className="max-h-full w-full object-contain object-center"
