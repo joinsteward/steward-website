@@ -87,12 +87,12 @@ const Navbar = () => {
         <li key={index}>
           <div
             onClick={() => push(item.path)}
-            class="flex cursor-pointer items-start rounded-md p-2 transition-all duration-100 ease-in-out hover:border hover:border-[#EBE9FE] hover:bg-gray-25"
+            className="flex cursor-pointer items-start rounded-md p-2 transition-all duration-100 ease-in-out hover:border hover:border-[#EBE9FE] hover:bg-gray-25"
           >
             <Image className="object-contain object-center" alt="hero" src={item.img} />
-            <div class="pl-6">
-              <h2 class="title-font mb-1 text-sm font-medium text-gray-900">{item.name}</h2>
-              <div class="text-xs">{item.desc}</div>
+            <div className="pl-6">
+              <h2 className="title-font mb-1 text-sm font-medium text-gray-900">{item.name}</h2>
+              <div className="text-xs">{item.desc}</div>
             </div>
           </div>
         </li>
@@ -109,12 +109,12 @@ const Navbar = () => {
               push(item.path)
               handleClick()
             }}
-            class="flex cursor-pointer items-start rounded-md p-2 transition-all duration-100 ease-in-out hover:border hover:border-[#EBE9FE] hover:bg-gray-25"
+            className="flex cursor-pointer items-start rounded-md p-2 transition-all duration-100 ease-in-out hover:border hover:border-[#EBE9FE] hover:bg-gray-25"
           >
             <Image className="object-contain object-center" alt="hero" src={item.img} />
-            <div class="pl-6">
-              <h2 class="title-font mb-1 text-sm font-medium text-gray-900">{item.name}</h2>
-              <div class="text-xs">{item.desc}</div>
+            <div className="pl-6">
+              <h2 className="title-font mb-1 text-sm font-medium text-gray-900">{item.name}</h2>
+              <div className="text-xs">{item.desc}</div>
             </div>
           </div>
         </li>
