@@ -18,7 +18,7 @@ import { capitalizeString, cardidTypes, countries } from 'utils/common'
 const Director = () => {
   const [files, setFiles] = useState([])
   const [fileChange, setFileChange] = useState(false)
-  const [updateID, setUpdateID] = useState(null)
+  const [uploading, setUploading] = useState(null)
 
   const router = useRouter()
   const { slug, username } = router.query
@@ -287,6 +287,8 @@ const Director = () => {
               setValue={setFiles}
               setFileChange={setFileChange}
               fileChange={fileChange}
+              uploadingFile={uploading}
+              setUploadingFile={setUploading}
             />
           </div>
         </>
@@ -317,7 +319,11 @@ const Director = () => {
               'Complete verification'
             )}
           </button> */}
-          <CustomButton className="mx-auto" loading={loadingPost} disabled={loadingPost}>
+          <CustomButton
+            className="mx-auto"
+            loading={loadingPost}
+            disabled={loadingPost || uploading}
+          >
             Complete verification
           </CustomButton>
         </div>
