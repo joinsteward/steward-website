@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const axiosInstance = () => {
   return axios.create({
-    baseURL: 'https://king-prawn-app-ovupz.ondigitalocean.app/api/',
+    baseURL: 'https://api-staging2.joinsteward.com/api/',
     timeout: 5000,
   })
 }
