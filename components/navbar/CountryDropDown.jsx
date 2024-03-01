@@ -6,7 +6,7 @@ import ReturnCountry from 'utils/hooks'
 
 const country = [
   { country: 'Uganda', iso: 'UG', img: UgandaLogo, currency: 'UGX' },
-  { country: 'Nigeria', iso: 'NGA', img: NigeriaLogo, currency: 'NGN', soon: true },
+  { country: 'Nigeria', iso: 'NGA', img: NigeriaLogo, currency: 'NGN', soon: false },
 ]
 const CountryDropDown = ({ align }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false)

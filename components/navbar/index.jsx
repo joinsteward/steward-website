@@ -131,7 +131,7 @@ const Navbar = () => {
           </Link>
 
           <div className="flex items-center gap-2 md:hidden">
-            {/* {!click && <CountryDropDown align="right" />} */}
+            {!click && <CountryDropDown align="right" />}
             <button
               onClick={handleClick}
               className={classNames('z-50 rounded-full p-1.5', { ['bg-gray-100']: !click })}
@@ -167,7 +167,7 @@ const Navbar = () => {
 
         <div className="z-50 hidden md:flex">
           <div className="flex flex-row items-center space-x-4 font-medium md:ml-16">
-            {/* <CountryDropDown /> */}
+            <CountryDropDown />
             <Link
               className="flex  h-11 items-center justify-center px-3 text-xs font-medium text-gray-30 md:px-6 md:text-base"
               href="https://app.joinsteward.com"
